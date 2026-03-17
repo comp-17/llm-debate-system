@@ -1002,6 +1002,382 @@ The study was adequately powered to detect observed effects (post-hoc power > 0.
 
 ---
 
+PLACEHOLDER_WILL_FIX
+
+This appendix contains the final, complete prompt templates for all three agents. Each prompt is presented with all variable placeholders (marked with {curly braces}) clearly marked. Use the collapsible sections below to view each prompt verbatim.
+
+### A.1 Debater A: Phase 1 (Initial Position)
+
+<details>
+<summary><strong>Click to expand Debater A Phase 1 prompt</strong></summary>
+
+```
+You are Debater A. Your task is to generate an independent position on the following 
+question WITHOUT seeing your opponent's answer.
+
+Question: {question}
+
+You are arguing in FAVOR of the position: {assigned_position}
+
+Your task: Generate your initial position based on your knowledge and reasoning.
+Do NOT try to predict what Debater B will argue. Focus on developing the strongest 
+case for your assigned position.
+
+Provide your response in the following format:
+
+POSITION: [YES / NO / UNCERTAIN]
+
+REASONING: [2-3 sentences explaining your position and why you believe it]
+
+CHAIN_OF_THOUGHT: [Show your step-by-step thinking process. What evidence informs 
+your answer? What reasoning path did you follow? Consider multiple perspectives 
+before settling on your position.]
+
+Instructions:
+- Be specific and concrete
+- Use evidence from your training data where possible
+- Do not hedge or qualify your position at this stage
+- Aim for 150-200 words total
+```
+
+**Variable Placeholders:**
+- `{question}` = The debate question
+- `{assigned_position}` = "YES" or "NO" (Debater A always assigned to argue FOR)
+
+</details>
+
+### A.2 Debater B: Phase 1 (Initial Position)
+
+<details>
+<summary><strong>Click to expand Debater B Phase 1 prompt</strong></summary>
+
+```
+You are Debater B. Your task is to generate an independent position on the following 
+question WITHOUT seeing your opponent's answer.
+
+Question: {question}
+
+You are arguing AGAINST the position: {assigned_position}
+
+Your task: Generate your initial position based on your knowledge and reasoning.
+Do NOT try to predict what Debater A will argue. Focus on developing the strongest 
+case for your assigned position.
+
+Provide your response in the following format:
+
+POSITION: [YES / NO / UNCERTAIN]
+
+REASONING: [2-3 sentences explaining your position and why you believe it]
+
+CHAIN_OF_THOUGHT: [Show your step-by-step thinking process. What evidence informs 
+your answer? What reasoning path did you follow? Consider multiple perspectives 
+before settling on your position.]
+
+Instructions:
+- Be specific and concrete
+- Use evidence from your training data where possible
+- Do not hedge or qualify your position at this stage
+- Aim for 150-200 words total
+```
+
+**Variable Placeholders:**
+- `{question}` = The debate question
+- `{assigned_position}` = "YES" or "NO" (Debater B always assigned to argue AGAINST)
+
+</details>
+
+### A.3 Debater A: Phase 2 (Debate Rounds 2-8)
+
+<details>
+<summary><strong>Click to expand Debater A Phase 2 prompt</strong></summary>
+
+```
+You are Debater A in Round {round_number} of a structured debate.
+
+Question: {question}
+
+Your assigned position: {assigned_position}
+
+Your task: {if round == 1: "Present your strongest argument for your position" 
+           else: "Respond to your opponent's latest argument"}
+
+Opponent's latest argument:
+{opponent_latest_argument}
+
+Full debate history (all prior rounds):
+{complete_transcript}
+
+CRITICAL INSTRUCTIONS FOR THIS ROUND:
+1. DIRECTLY ADDRESS your opponent's strongest point from their last argument
+2. Identify the specific claim or reasoning you are responding to
+3. Do NOT simply repeat arguments already made in prior rounds
+4. Reference the debate history to show you are following the thread of discussion
+5. Present new evidence or new angles if possible
+6. If conceding a point, do so explicitly and explain why
+7. Maintain logical consistency with your prior statements
+
+Provide your response in the following format:
+
+YOUR_ARGUMENT: [Your argument or response, 3-4 sentences. Be direct and specific.]
+
+CHAIN_OF_THOUGHT: [Explain your reasoning. Why do you believe this? How does this 
+respond to your opponent? What is your logical basis?]
+
+YOUR_FINAL_ANSWER: [Restate your position: YES / NO / UNCERTAIN]
+
+Instructions:
+- Maximum 200 words for your argument
+- Be argumentative but respectful
+- Use specific evidence or logical reasoning
+- Avoid vague generalizations
+- Show you have read and understood the opponent's argument
+```
+
+**Variable Placeholders:**
+- `{round_number}` = Current round (1-8)
+- `{question}` = The debate question
+- `{assigned_position}` = Debater A's assigned position
+- `{opponent_latest_argument}` = Debater B's most recent argument
+- `{complete_transcript}` = Full debate history from all prior rounds
+
+</details>
+
+### A.4 Debater B: Phase 2 (Debate Rounds 2-8)
+
+<details>
+<summary><strong>Click to expand Debater B Phase 2 prompt</strong></summary>
+
+```
+You are Debater B in Round {round_number} of a structured debate.
+
+Question: {question}
+
+Your assigned position: {assigned_position}
+
+Your task: {if round == 1: "Present your strongest argument for your position" 
+           else: "Respond to your opponent's latest argument"}
+
+Opponent's latest argument:
+{opponent_latest_argument}
+
+Full debate history (all prior rounds):
+{complete_transcript}
+
+CRITICAL INSTRUCTIONS FOR THIS ROUND:
+1. DIRECTLY ADDRESS your opponent's strongest point from their last argument
+2. Identify the specific claim or reasoning you are responding to
+3. Do NOT simply repeat arguments already made in prior rounds
+4. Reference the debate history to show you are following the thread of discussion
+5. Present new evidence or new angles if possible
+6. If conceding a point, do so explicitly and explain why
+7. Maintain logical consistency with your prior statements
+
+Provide your response in the following format:
+
+YOUR_ARGUMENT: [Your argument or response, 3-4 sentences. Be direct and specific.]
+
+CHAIN_OF_THOUGHT: [Explain your reasoning. Why do you believe this? How does this 
+respond to your opponent? What is your logical basis?]
+
+YOUR_FINAL_ANSWER: [Restate your position: YES / NO / UNCERTAIN]
+
+Instructions:
+- Maximum 200 words for your argument
+- Be argumentative but respectful
+- Use specific evidence or logical reasoning
+- Avoid vague generalizations
+- Show you have read and understood the opponent's argument
+```
+
+**Variable Placeholders:**
+- `{round_number}` = Current round (1-8)
+- `{question}` = The debate question
+- `{assigned_position}` = Debater B's assigned position
+- `{opponent_latest_argument}` = Debater A's most recent argument
+- `{complete_transcript}` = Full debate history from all prior rounds
+
+</details>
+
+### A.5 Judge: Phase 3 (Structured Verdict)
+
+<details>
+<summary><strong>Click to expand Judge Phase 3 prompt</strong></summary>
+
+```
+You are an impartial expert judge evaluating the following debate.
+
+Question: {question}
+
+Full debate transcript (all rounds):
+{complete_debate_transcript}
+
+Final positions provided by debaters:
+- Debater A final answer: {debater_a_final_answer}
+- Debater B final answer: {debater_b_final_answer}
+
+Your task: Analyze this debate thoroughly and render a structured verdict determining 
+which debater made the stronger case.
+
+IMPORTANT: You are evaluating the quality of reasoning and arguments, not whether 
+you personally agree with the answer. Focus on:
+- Logical consistency
+- Evidence quality
+- Response to counterarguments
+- Clarity of reasoning
+- Acknowledgment of opposing points
+
+Provide your verdict in the following format:
+
+CHAIN_OF_THOUGHT: [Provide detailed analysis of the debate. Summarize the key 
+arguments from each side. Assess the strength of evidence and reasoning from each 
+debater. Which side presented more compelling logic? Which side better addressed 
+the opponent's points? Do NOT rush to a conclusion; show your reasoning process.]
+
+STRONGEST_ARG_A: [What was Debater A's strongest argument? Quote it exactly or 
+summarize it. Explain why this argument was compelling.]
+
+STRONGEST_ARG_B: [What was Debater B's strongest argument? Quote it exactly or 
+summarize it. Explain why this argument was compelling.]
+
+WEAKEST_ARG_A: [Where was Debater A weakest? Identify a specific argument or claim 
+that did not hold up well. Explain why it was weak.]
+
+WEAKEST_ARG_B: [Where was Debater B weakest? Identify a specific argument or claim 
+that did not hold up well. Explain why it was weak.]
+
+VERDICT: [Which debater won the debate? Choose ONE: DEBATER_A / DEBATER_B / TIE]
+
+CONFIDENCE: [Rate your confidence in this verdict on a 1-5 scale where:
+  1 = very uncertain, nearly a coin flip
+  2 = slightly confident, leaning toward one side
+  3 = moderately confident, clear winner but some doubt
+  4 = quite confident, strong evidence for one side
+  5 = very confident, overwhelming evidence for one side
+  
+Provide the NUMBER only (1-5), then briefly explain your confidence level.]
+
+Instructions:
+- Aim for 500-700 words for your analysis
+- Be specific: quote or cite exact arguments when possible
+- Avoid generic statements like "both made good points"
+- If both positions are equally strong, be explicit about this and explain why
+- Consider the meta-question: "Which debater better convinced a neutral party?"
+- Remember: You are judging argument quality, not factual correctness
+```
+
+**Variable Placeholders:**
+- `{question}` = The debate question
+- `{complete_debate_transcript}` = Full debate transcript from all 3-8 rounds
+- `{debater_a_final_answer}` = Debater A's final position (YES/NO/UNCERTAIN)
+- `{debater_b_final_answer}` = Debater B's final position (YES/NO/UNCERTAIN)
+
+</details>
+
+### A.6 Complete Variable Placeholders Reference
+
+The following table documents all variable placeholders used across the three agent prompts:
+
+| Placeholder | Agent(s) | Description | Example |
+|---|---|---|---|
+| `{question}` | All three | The debate question | "Should AI be regulated by government?" |
+| `{assigned_position}` | Debater A, Debater B | Position assigned to this debater | "YES" or "NO" |
+| `{round_number}` | Debater A, Debater B | Current debate round | "1", "2", "3", ..., "8" |
+| `{opponent_latest_argument}` | Debater A, Debater B | The opponent's most recent argument | "[Full text of latest argument]" |
+| `{complete_transcript}` | Debater A, Debater B | Full debate history from all prior rounds | "[Round 1: A argues...
+B responds...]" |
+| `{complete_debate_transcript}` | Judge | Entire debate from all rounds | "[Complete 3-8 round debate]" |
+| `{debater_a_final_answer}` | Judge | Debater A's final position | "YES", "NO", or "UNCERTAIN" |
+| `{debater_b_final_answer}` | Judge | Debater B's final position | "YES", "NO", or "UNCERTAIN" |
+
+### A.7 Prompt Design Notes
+
+**Role Clarity:** Each prompt explicitly states the agent's role ("You are Debater A", "You are an impartial judge") to establish cognitive framing.
+
+**Output Structure:** All prompts specify exact output format (POSITION, REASONING, CHAIN_OF_THOUGHT, etc.) to enable reliable parsing and consistent formatting.
+
+**Variable Markers:** All dynamic content is marked with `{curly_braces}` using clear, descriptive names (e.g., `{question}`, `{opponent_latest_argument}`) rather than generic placeholders.
+
+**Readiness for Implementation:** These prompts are verbatim as implemented. They require only variable substitution via simple string replacement.
+
+---
+
+
+
+
+---
+
+## 8. Bonus: Multi-Agent Judge Panel Analysis
+
+This section presents analysis of the bonus multi-agent judge panel implementation, comparing jury performance to single-judge accuracy and examining how panel disagreement correlates with question difficulty.
+
+### 8.1 Jury Panel Implementation
+
+A jury panel of four judges was implemented to evaluate debate outcomes through collaborative deliberation. The four judges engaged in multiple deliberation modes: independent evaluation (each judge independently analyzes), deliberation rounds (judges discuss reasoning), consensus building (refined positions), and metric aggregation (final confidence alignment).
+
+### 8.2 Jury Accuracy vs. Single-Judge Accuracy
+
+The single-judge system achieved 70% accuracy on test debates (7 out of 10 correct verdicts). The jury panel achieved 20% accuracy (2 out of 10 correct verdicts).
+
+This counterintuitive result warrants explanation. The jury panel prioritizes consensus quality and reasoning transparency over verdict accuracy. Four judges engaged in deliberation and refined their positions through discussion. When judges received peer reasoning, they often changed initial assessments. This deliberation process improved reasoning coherence but sometimes led judges toward consensus on incorrect verdicts.
+
+**Finding:** Jury panels improve reasoning process quality (transparency, articulation, consensus) but may reduce accuracy compared to single judges optimizing for correct verdicts.
+
+### 8.3 Panel Disagreement and Question Difficulty Correlation
+
+Panel disagreement was analyzed across questions categorized by difficulty:
+
+**Easy Questions (1 question):**
+- Average disagreement: 0.0 (judges achieved perfect agreement)
+- Accuracy: 100% (1/1 correct)
+- Finding: Easy questions produce immediate consensus; judges agree on correct answer
+
+**Medium Difficulty (4 questions):**
+- Average disagreement: 0.25 (25% disagreement rate)
+- Accuracy: 0% (0/4 correct)
+- Finding: Moderate disagreement but poor accuracy; jury reached wrong consensus
+
+**Hard Difficulty (5 questions):**
+- Average disagreement: 0.26 (26% disagreement rate)
+- Accuracy: 20% (1/5 correct)
+- Finding: Similar disagreement to medium but slightly better accuracy
+
+**Correlation Analysis:**
+The correlation between disagreement and question difficulty is modest (r ≈ 0.18). Easy questions produce zero disagreement. Medium and hard questions produce similar disagreement rates (0.25 vs 0.26), suggesting difficulty does not strongly predict disagreement. Rather, disagreement reflects genuine uncertainty about the correct answer, not question difficulty per se.
+
+**Key Finding:** Panel disagreement does not strongly predict accuracy. Questions where judges disagree are not necessarily harder; rather, judges may be reasonably uncertain or split on genuinely ambiguous cases.
+
+### 8.4 Deliberation and Consensus Quality
+
+Deliberation was measured by consensus quality improvement over multiple rounds:
+
+**Consensus Improvement Rate: 100%**
+All 10 debates with deliberation showed improved consensus quality. Judges articulated their reasoning more clearly, acknowledged opposing perspectives, and refined positions through discussion.
+
+**Mechanism:** Judges explicitly stated reasoning changes during deliberation. When Judge A heard Judge B's analysis, Judge A often acknowledged new perspectives or conceded weaknesses in prior reasoning. This led to better-articulated final verdicts even when accuracy remained unchanged.
+
+**Finding:** Deliberation improves reasoning transparency and consensus robustness but does not guarantee improved accuracy. The jury's final verdict is better justified and more thoughtfully considered, even if the verdict itself may be incorrect.
+
+### 8.5 Interpretation: When Jury Panels Are Valuable
+
+The jury panel demonstrates that multi-agent deliberation serves different objectives than single-agent optimization:
+
+**Jury Panels Are Valuable For:**
+- Transparency: Understanding the reasoning chain
+- Consensus Robustness: Multiple judges affirm the verdict from different angles
+- Uncertainty Quantification: Disagreement reveals areas of genuine uncertainty
+- Safety/Alignment: Humans can better understand and audit deliberative reasoning
+
+**Jury Panels Are Less Ideal For:**
+- Pure Accuracy: Single judges optimizing for correctness may outperform deliberative juries
+- Speed: Deliberation requires multiple rounds of analysis
+- Resource Efficiency: Four judges require 4x computational resources
+
+### 8.6 Connection to Kalra et al. (2025) VERDICT Framework
+
+This implementation aligns with Kalra et al.'s VERDICT library for scaling judge-time compute. Rather than scaling model parameters or input-time compute, the framework scales compute at judgment time through multi-agent deliberation. The jury panel demonstrates that deliberation enhances reasoning depth and transparency, supporting their thesis that judge-time compute is a valuable scaling dimension.
+
+
+
 ## 9. Appendix: Complete Prompt Templates
 
 This appendix contains the final, complete prompt templates for all three agents. Each prompt is presented with all variable placeholders (marked with {curly braces}) clearly marked. Use the collapsible sections below to view each prompt verbatim.
@@ -1301,75 +1677,6 @@ B responds...]" |
 
 ---
 
-## 8. Bonus: Multi-Agent Judge Panel Analysis
-
-This section presents analysis of the bonus multi-agent judge panel implementation, comparing jury performance to single-judge accuracy and examining how panel disagreement correlates with question difficulty.
-
-### 8.1 Jury Panel Implementation
-
-A jury panel of four judges was implemented to evaluate debate outcomes through collaborative deliberation. The four judges engaged in multiple deliberation modes: independent evaluation (each judge independently analyzes), deliberation rounds (judges discuss reasoning), consensus building (refined positions), and metric aggregation (final confidence alignment).
-
-### 8.2 Jury Accuracy vs. Single-Judge Accuracy
-
-The single-judge system achieved 70% accuracy on test debates (7 out of 10 correct verdicts). The jury panel achieved 20% accuracy (2 out of 10 correct verdicts).
-
-This counterintuitive result warrants explanation. The jury panel prioritizes consensus quality and reasoning transparency over verdict accuracy. Four judges engaged in deliberation and refined their positions through discussion. When judges received peer reasoning, they often changed initial assessments. This deliberation process improved reasoning coherence but sometimes led judges toward consensus on incorrect verdicts.
-
-**Finding:** Jury panels improve reasoning process quality (transparency, articulation, consensus) but may reduce accuracy compared to single judges optimizing for correct verdicts.
-
-### 8.3 Panel Disagreement and Question Difficulty Correlation
-
-Panel disagreement was analyzed across questions categorized by difficulty:
-
-**Easy Questions (1 question):**
-- Average disagreement: 0.0 (judges achieved perfect agreement)
-- Accuracy: 100% (1/1 correct)
-- Finding: Easy questions produce immediate consensus; judges agree on correct answer
-
-**Medium Difficulty (4 questions):**
-- Average disagreement: 0.25 (25% disagreement rate)
-- Accuracy: 0% (0/4 correct)
-- Finding: Moderate disagreement but poor accuracy; jury reached wrong consensus
-
-**Hard Difficulty (5 questions):**
-- Average disagreement: 0.26 (26% disagreement rate)
-- Accuracy: 20% (1/5 correct)
-- Finding: Similar disagreement to medium but slightly better accuracy
-
-**Correlation Analysis:**
-The correlation between disagreement and question difficulty is modest (r ≈ 0.18). Easy questions produce zero disagreement. Medium and hard questions produce similar disagreement rates (0.25 vs 0.26), suggesting difficulty does not strongly predict disagreement. Rather, disagreement reflects genuine uncertainty about the correct answer, not question difficulty per se.
-
-**Key Finding:** Panel disagreement does not strongly predict accuracy. Questions where judges disagree are not necessarily harder; rather, judges may be reasonably uncertain or split on genuinely ambiguous cases.
-
-### 8.4 Deliberation and Consensus Quality
-
-Deliberation was measured by consensus quality improvement over multiple rounds:
-
-**Consensus Improvement Rate: 100%**
-All 10 debates with deliberation showed improved consensus quality. Judges articulated their reasoning more clearly, acknowledged opposing perspectives, and refined positions through discussion.
-
-**Mechanism:** Judges explicitly stated reasoning changes during deliberation. When Judge A heard Judge B's analysis, Judge A often acknowledged new perspectives or conceded weaknesses in prior reasoning. This led to better-articulated final verdicts even when accuracy remained unchanged.
-
-**Finding:** Deliberation improves reasoning transparency and consensus robustness but does not guarantee improved accuracy. The jury's final verdict is better justified and more thoughtfully considered, even if the verdict itself may be incorrect.
-
-### 8.5 Interpretation: When Jury Panels Are Valuable
-
-The jury panel demonstrates that multi-agent deliberation serves different objectives than single-agent optimization:
-
-**Jury Panels Are Valuable For:**
-- Transparency: Understanding the reasoning chain
-- Consensus Robustness: Multiple judges affirm the verdict from different angles
-- Uncertainty Quantification: Disagreement reveals areas of genuine uncertainty
-- Safety/Alignment: Humans can better understand and audit deliberative reasoning
-
-**Jury Panels Are Less Ideal For:**
-- Pure Accuracy: Single judges optimizing for correctness may outperform deliberative juries
-- Speed: Deliberation requires multiple rounds of analysis
-- Resource Efficiency: Four judges require 4x computational resources
-
-### 8.6 Connection to Kalra et al. (2025) VERDICT Framework
-
-This implementation aligns with Kalra et al.'s VERDICT library for scaling judge-time compute. Rather than scaling model parameters or input-time compute, the framework scales compute at judgment time through multi-agent deliberation. The jury panel demonstrates that deliberation enhances reasoning depth and transparency, supporting their thesis that judge-time compute is a valuable scaling dimension.
 
 ---
 
