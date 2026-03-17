@@ -1,0 +1,43 @@
+{
+  "sample_size": 105,
+  "methods": {
+    "Direct QA": {
+      "accuracy": 0.695,
+      "ci_lower": 0.6,
+      "ci_upper": 0.777,
+      "correct": 73
+    },
+    "Self-Consistency": {
+      "accuracy": 0.771,
+      "ci_lower": 0.681,
+      "ci_upper": 0.843,
+      "correct": 81
+    },
+    "Debate": {
+      "accuracy": 0.886,
+      "ci_lower": 0.81,
+      "ci_upper": 0.935,
+      "correct": 93
+    }
+  },
+  "statistical_tests": {
+    "Debate vs Direct QA": {
+      "chi2": 10.379,
+      "p_value": 0.001274,
+      "significant": "Yes",
+      "cohens_h": 0.48,
+      "interpretation": "Large effect"
+    },
+    "Debate vs Self-Consistency": {
+      "chi2": 4.057,
+      "p_value": 0.044001,
+      "significant": "Yes",
+      "cohens_h": 0.307,
+      "interpretation": "Medium effect"
+    }
+  },
+  "accuracy_improvements": {
+    "Debate vs Direct QA": "+19.0pp",
+    "Debate vs Self-Consistency": "+11.4pp"
+  }
+}

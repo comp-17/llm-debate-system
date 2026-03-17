@@ -1,0 +1,737 @@
+[
+  {
+    "id": 1,
+    "domain": "Government",
+    "question": "Is climate change primarily caused by human activity?",
+    "answer": "YES",
+    "evidence": "IPCC consensus 97%+"
+  },
+  {
+    "id": 2,
+    "domain": "Government",
+    "question": "Should nuclear energy be a major part of climate solutions?",
+    "answer": "YES",
+    "evidence": "Low-carbon energy source, growing consensus"
+  },
+  {
+    "id": 3,
+    "domain": "Government",
+    "question": "Do universal healthcare systems reduce total healthcare costs?",
+    "answer": "YES",
+    "evidence": "OECD data shows lower per-capita costs"
+  },
+  {
+    "id": 4,
+    "domain": "Government",
+    "question": "Is wealth inequality increasing in developed nations?",
+    "answer": "YES",
+    "evidence": "Gini coefficient trends, Piketty research"
+  },
+  {
+    "id": 5,
+    "domain": "Government",
+    "question": "Have trade wars reduced overall global economic growth?",
+    "answer": "YES",
+    "evidence": "IMF/World Bank economic data 2018-2020"
+  },
+  {
+    "id": 6,
+    "domain": "Government",
+    "question": "Should AI systems be regulated by governments?",
+    "answer": "YES",
+    "evidence": "EU AI Act, emerging policy consensus"
+  },
+  {
+    "id": 7,
+    "domain": "Government",
+    "question": "Is the US immigration rate at historically high levels?",
+    "answer": "NO",
+    "evidence": "Migration data shows lower rates than 1980s-1990s"
+  },
+  {
+    "id": 8,
+    "domain": "Government",
+    "question": "Do carbon taxes effectively reduce emissions?",
+    "answer": "YES",
+    "evidence": "British Columbia, EU ETS data"
+  },
+  {
+    "id": 9,
+    "domain": "Government",
+    "question": "Has income mobility declined in the US?",
+    "answer": "YES",
+    "evidence": "Chetty et al. mobility studies"
+  },
+  {
+    "id": 10,
+    "domain": "Government",
+    "question": "Should renewable energy subsidies be increased?",
+    "answer": "YES",
+    "evidence": "Cost-benefit analysis favors public investment"
+  },
+  {
+    "id": 11,
+    "domain": "Government",
+    "question": "Is cryptocurrency adoption increasing globally?",
+    "answer": "YES",
+    "evidence": "User growth, institutional adoption"
+  },
+  {
+    "id": 12,
+    "domain": "Government",
+    "question": "Should minimum wage be $15/hour?",
+    "answer": "YES",
+    "evidence": "Economic studies show minimal employment effects"
+  },
+  {
+    "id": 13,
+    "domain": "Government",
+    "question": "Has voting accessibility improved in the US?",
+    "answer": "YES",
+    "evidence": "Mail-in, early voting expansion"
+  },
+  {
+    "id": 14,
+    "domain": "Government",
+    "question": "Do gun buyback programs reduce gun violence?",
+    "answer": "YES",
+    "evidence": "Australia case study shows effectiveness"
+  },
+  {
+    "id": 15,
+    "domain": "Government",
+    "question": "Is foreign direct investment beneficial for developing nations?",
+    "answer": "YES",
+    "evidence": "UNCTAD research, job creation data"
+  },
+  {
+    "id": 16,
+    "domain": "Climate",
+    "question": "Are ocean temperatures rising faster than land temperatures?",
+    "answer": "NO",
+    "evidence": "Land warms faster due to heat capacity"
+  },
+  {
+    "id": 17,
+    "domain": "Climate",
+    "question": "Will sea levels rise by 1 meter by 2100?",
+    "answer": "YES",
+    "evidence": "IPCC projections, ice melt data"
+  },
+  {
+    "id": 18,
+    "domain": "Climate",
+    "question": "Are coral reefs declining globally?",
+    "answer": "YES",
+    "evidence": "Bleaching events, coverage loss data"
+  },
+  {
+    "id": 19,
+    "domain": "Climate",
+    "question": "Has ozone layer recovery begun?",
+    "answer": "YES",
+    "evidence": "NASA/WMO monitoring shows improvement"
+  },
+  {
+    "id": 20,
+    "domain": "Climate",
+    "question": "Are microplastics accumulating in human bodies?",
+    "answer": "YES",
+    "evidence": "Blood, lung, placenta studies"
+  },
+  {
+    "id": 21,
+    "domain": "Climate",
+    "question": "Is methane release from permafrost accelerating?",
+    "answer": "YES",
+    "evidence": "Arctic monitoring data 2010-2025"
+  },
+  {
+    "id": 22,
+    "domain": "Climate",
+    "question": "Are insect populations declining globally?",
+    "answer": "YES",
+    "evidence": "Biomass loss studies, multiple countries"
+  },
+  {
+    "id": 23,
+    "domain": "Climate",
+    "question": "Will Amazon rainforest reach tipping point by 2050?",
+    "answer": "YES",
+    "evidence": "Climate modeling, deforestation rates"
+  },
+  {
+    "id": 24,
+    "domain": "Climate",
+    "question": "Are we in the sixth mass extinction event?",
+    "answer": "YES",
+    "evidence": "Species loss rates exceed background levels"
+  },
+  {
+    "id": 25,
+    "domain": "Climate",
+    "question": "Is atmospheric CO2 still rising?",
+    "answer": "YES",
+    "evidence": "Mauna Loa data, current levels ~420ppm"
+  },
+  {
+    "id": 26,
+    "domain": "Climate",
+    "question": "Have extreme weather events increased in frequency?",
+    "answer": "YES",
+    "evidence": "NOAA data, insurance claim trends"
+  },
+  {
+    "id": 27,
+    "domain": "Climate",
+    "question": "Is biodiversity loss accelerating due to climate change?",
+    "answer": "YES",
+    "evidence": "Range shifts, phenological changes"
+  },
+  {
+    "id": 28,
+    "domain": "Climate",
+    "question": "Will agriculture be negatively impacted by climate change?",
+    "answer": "YES",
+    "evidence": "Yield projections, water availability"
+  },
+  {
+    "id": 29,
+    "domain": "Climate",
+    "question": "Are carbon sinks becoming less effective?",
+    "answer": "YES",
+    "evidence": "Forest sink capacity declining"
+  },
+  {
+    "id": 30,
+    "domain": "Climate",
+    "question": "Is ocean acidification reversible this century?",
+    "answer": "NO",
+    "evidence": "Timescales for pH recovery are centuries+"
+  },
+  {
+    "id": 31,
+    "domain": "Technology",
+    "question": "Are AI systems becoming more capable each year?",
+    "answer": "YES",
+    "evidence": "Benchmark improvements, model scaling"
+  },
+  {
+    "id": 32,
+    "domain": "Technology",
+    "question": "Will AI surpass human intelligence in 10 years?",
+    "answer": "UNCERTAIN",
+    "evidence": "Highly speculative, depends on definitions"
+  },
+  {
+    "id": 33,
+    "domain": "Technology",
+    "question": "Are neural networks interpretable?",
+    "answer": "NO",
+    "evidence": "Black box problem, limited interpretability"
+  },
+  {
+    "id": 34,
+    "domain": "Technology",
+    "question": "Is quantum computing ready for practical applications?",
+    "answer": "NO",
+    "evidence": "Still early stage, error correction unsolved"
+  },
+  {
+    "id": 35,
+    "domain": "Technology",
+    "question": "Are cybersecurity threats increasing?",
+    "answer": "YES",
+    "evidence": "Breach statistics, ransomware growth"
+  },
+  {
+    "id": 36,
+    "domain": "Technology",
+    "question": "Will 5G significantly change mobile technology?",
+    "answer": "YES",
+    "evidence": "Speed, latency improvements enabling new uses"
+  },
+  {
+    "id": 37,
+    "domain": "Technology",
+    "question": "Are cryptocurrency networks secure?",
+    "answer": "YES",
+    "evidence": "Bitcoin 15+ years without major compromise"
+  },
+  {
+    "id": 38,
+    "domain": "Technology",
+    "question": "Is AI bias a significant problem in deployed systems?",
+    "answer": "YES",
+    "evidence": "Documented cases in hiring, lending, criminal justice"
+  },
+  {
+    "id": 39,
+    "domain": "Technology",
+    "question": "Will virtual reality replace physical workplaces?",
+    "answer": "NO",
+    "evidence": "Technical/social barriers remain"
+  },
+  {
+    "id": 40,
+    "domain": "Technology",
+    "question": "Are self-driving cars safer than human drivers?",
+    "answer": "YES",
+    "evidence": "Accident data per mile driven"
+  },
+  {
+    "id": 41,
+    "domain": "Technology",
+    "question": "Is open-source software as secure as proprietary?",
+    "answer": "YES",
+    "evidence": "Security through transparency principle"
+  },
+  {
+    "id": 42,
+    "domain": "Technology",
+    "question": "Will the metaverse become mainstream?",
+    "answer": "UNCERTAIN",
+    "evidence": "Currently limited adoption"
+  },
+  {
+    "id": 43,
+    "domain": "Technology",
+    "question": "Are GPUs becoming essential for AI?",
+    "answer": "YES",
+    "evidence": "Parallel processing requirements"
+  },
+  {
+    "id": 44,
+    "domain": "Technology",
+    "question": "Is edge computing more energy-efficient than cloud?",
+    "answer": "YES",
+    "evidence": "Reduced network transmission"
+  },
+  {
+    "id": 45,
+    "domain": "Technology",
+    "question": "Will biotechnology revolutionize medicine by 2030?",
+    "answer": "YES",
+    "evidence": "CRISPR, personalized medicine progress"
+  },
+  {
+    "id": 46,
+    "domain": "Economics",
+    "question": "Is inflation currently above target in developed economies?",
+    "answer": "NO",
+    "evidence": "2026 inflation normalized to 2-3%"
+  },
+  {
+    "id": 47,
+    "domain": "Economics",
+    "question": "Have real wages kept pace with productivity?",
+    "answer": "NO",
+    "evidence": "Wage-productivity gap documented since 1979"
+  },
+  {
+    "id": 48,
+    "domain": "Economics",
+    "question": "Is the stock market overvalued currently?",
+    "answer": "UNCERTAIN",
+    "evidence": "P/E ratios elevated but debatable"
+  },
+  {
+    "id": 49,
+    "domain": "Economics",
+    "question": "Will cryptocurrency replace fiat currency?",
+    "answer": "NO",
+    "evidence": "Central bank adoption, regulatory control"
+  },
+  {
+    "id": 50,
+    "domain": "Economics",
+    "question": "Is automation eliminating jobs faster than creation?",
+    "answer": "NO",
+    "evidence": "Historical job creation outpaces automation"
+  },
+  {
+    "id": 51,
+    "domain": "Economics",
+    "question": "Should universal basic income be implemented?",
+    "answer": "YES",
+    "evidence": "Pilot studies show positive outcomes"
+  },
+  {
+    "id": 52,
+    "domain": "Economics",
+    "question": "Are housing prices unsustainable in major cities?",
+    "answer": "YES",
+    "evidence": "Price-to-income ratios historically high"
+  },
+  {
+    "id": 53,
+    "domain": "Economics",
+    "question": "Will remote work permanently reduce office demand?",
+    "answer": "YES",
+    "evidence": "Hybrid work adoption trends"
+  },
+  {
+    "id": 54,
+    "domain": "Economics",
+    "question": "Is student debt becoming a crisis?",
+    "answer": "YES",
+    "evidence": "Debt levels, default rates"
+  },
+  {
+    "id": 55,
+    "domain": "Economics",
+    "question": "Should corporations pay more taxes?",
+    "answer": "YES",
+    "evidence": "Revenue needs, equity concerns"
+  },
+  {
+    "id": 56,
+    "domain": "Economics",
+    "question": "Is globalization slowing?",
+    "answer": "YES",
+    "evidence": "Trade policy, supply chain localization"
+  },
+  {
+    "id": 57,
+    "domain": "Economics",
+    "question": "Will AI increase economic inequality?",
+    "answer": "YES",
+    "evidence": "Capital concentration patterns"
+  },
+  {
+    "id": 58,
+    "domain": "Economics",
+    "question": "Are venture capital investments overheated?",
+    "answer": "YES",
+    "evidence": "Funding levels vs. profitability"
+  },
+  {
+    "id": 59,
+    "domain": "Economics",
+    "question": "Is the gig economy sustainable for workers?",
+    "answer": "NO",
+    "evidence": "Lack of benefits, income instability"
+  },
+  {
+    "id": 60,
+    "domain": "Economics",
+    "question": "Will emerging markets outpace developed economies?",
+    "answer": "YES",
+    "evidence": "Growth rate differentials"
+  },
+  {
+    "id": 61,
+    "domain": "Science",
+    "question": "Is mRNA vaccine technology proven effective?",
+    "answer": "YES",
+    "evidence": "COVID vaccination data, clinical trials"
+  },
+  {
+    "id": 62,
+    "domain": "Science",
+    "question": "Are antibiotics becoming less effective?",
+    "answer": "YES",
+    "evidence": "Antibiotic resistance emergence"
+  },
+  {
+    "id": 63,
+    "domain": "Science",
+    "question": "Will personalized medicine revolutionize healthcare?",
+    "answer": "YES",
+    "evidence": "Genomics advances, targeted treatments"
+  },
+  {
+    "id": 64,
+    "domain": "Science",
+    "question": "Are sleep disorders increasing globally?",
+    "answer": "YES",
+    "evidence": "Work stress, blue light exposure"
+  },
+  {
+    "id": 65,
+    "domain": "Science",
+    "question": "Is mental health declining in developed nations?",
+    "answer": "YES",
+    "evidence": "Depression, anxiety rates increasing"
+  },
+  {
+    "id": 66,
+    "domain": "Science",
+    "question": "Are probiotics beneficial for gut health?",
+    "answer": "YES",
+    "evidence": "Microbiome research, clinical studies"
+  },
+  {
+    "id": 67,
+    "domain": "Science",
+    "question": "Is processed food a major health driver?",
+    "answer": "YES",
+    "evidence": "Obesity, metabolic syndrome correlations"
+  },
+  {
+    "id": 68,
+    "domain": "Science",
+    "question": "Will gene editing cure genetic diseases?",
+    "answer": "YES",
+    "evidence": "CRISPR successes, clinical trials"
+  },
+  {
+    "id": 69,
+    "domain": "Science",
+    "question": "Is air pollution a top health risk?",
+    "answer": "YES",
+    "evidence": "WHO mortality estimates"
+  },
+  {
+    "id": 70,
+    "domain": "Science",
+    "question": "Are cancer survival rates improving?",
+    "answer": "YES",
+    "evidence": "Immunotherapy, targeted drug successes"
+  },
+  {
+    "id": 71,
+    "domain": "Science",
+    "question": "Is exercise more important than diet for health?",
+    "answer": "NO",
+    "evidence": "Nutrition has greater health impact"
+  },
+  {
+    "id": 72,
+    "domain": "Science",
+    "question": "Will Alzheimer's have a cure by 2030?",
+    "answer": "NO",
+    "evidence": "Still early-stage treatments only"
+  },
+  {
+    "id": 73,
+    "domain": "Science",
+    "question": "Are vaccines safe for general population?",
+    "answer": "YES",
+    "evidence": "Safety monitoring, benefit-risk analysis"
+  },
+  {
+    "id": 74,
+    "domain": "Science",
+    "question": "Is inflammation a key driver of aging?",
+    "answer": "YES",
+    "evidence": "Gerontology research, inflammaging concept"
+  },
+  {
+    "id": 75,
+    "domain": "Science",
+    "question": "Will AI improve drug discovery?",
+    "answer": "YES",
+    "evidence": "AlphaFold, screening accelerations"
+  },
+  {
+    "id": 76,
+    "domain": "Society",
+    "question": "Is social media harmful to mental health?",
+    "answer": "YES",
+    "evidence": "Psychological studies, teen mental health trends"
+  },
+  {
+    "id": 77,
+    "domain": "Society",
+    "question": "Are gender pay gaps still significant?",
+    "answer": "YES",
+    "evidence": "Wage gap data across industries"
+  },
+  {
+    "id": 78,
+    "domain": "Society",
+    "question": "Is diversity beneficial for organizations?",
+    "answer": "YES",
+    "evidence": "Performance and innovation studies"
+  },
+  {
+    "id": 79,
+    "domain": "Society",
+    "question": "Are people working longer hours than previous generations?",
+    "answer": "YES",
+    "evidence": "Work-life balance surveys"
+  },
+  {
+    "id": 80,
+    "domain": "Society",
+    "question": "Is misinformation increasing online?",
+    "answer": "YES",
+    "evidence": "Deepfakes, bot networks, viral false claims"
+  },
+  {
+    "id": 81,
+    "domain": "Society",
+    "question": "Should college education be free?",
+    "answer": "YES",
+    "evidence": "Economic multiplier benefits"
+  },
+  {
+    "id": 82,
+    "domain": "Society",
+    "question": "Is cyberbullying a serious problem?",
+    "answer": "YES",
+    "evidence": "Youth mental health impacts"
+  },
+  {
+    "id": 83,
+    "domain": "Society",
+    "question": "Are cancel culture effects positive or negative?",
+    "answer": "UNCERTAIN",
+    "evidence": "Mixed perspectives and outcomes"
+  },
+  {
+    "id": 84,
+    "domain": "Society",
+    "question": "Is social mobility declining?",
+    "answer": "YES",
+    "evidence": "Intergenerational wealth transfer patterns"
+  },
+  {
+    "id": 85,
+    "domain": "Society",
+    "question": "Should technology companies be regulated more?",
+    "answer": "YES",
+    "evidence": "Privacy, monopoly concerns"
+  },
+  {
+    "id": 86,
+    "domain": "Society",
+    "question": "Are young adults more anxious than previous generations?",
+    "answer": "YES",
+    "evidence": "Anxiety disorder prevalence rates"
+  },
+  {
+    "id": 87,
+    "domain": "Society",
+    "question": "Is community engagement declining?",
+    "answer": "YES",
+    "evidence": "Civic participation metrics"
+  },
+  {
+    "id": 88,
+    "domain": "Society",
+    "question": "Should gig workers have employee benefits?",
+    "answer": "YES",
+    "evidence": "Social security, worker protection arguments"
+  },
+  {
+    "id": 89,
+    "domain": "Society",
+    "question": "Is polarization increasing in democracies?",
+    "answer": "YES",
+    "evidence": "Political polarization indices"
+  },
+  {
+    "id": 90,
+    "domain": "Society",
+    "question": "Will remote work increase or decrease inequality?",
+    "answer": "UNCERTAIN",
+    "evidence": "Technology access divides could widen"
+  },
+  {
+    "id": 91,
+    "domain": "History",
+    "question": "Was the industrial revolution beneficial for workers?",
+    "answer": "NO",
+    "evidence": "Child labor, poor conditions initially"
+  },
+  {
+    "id": 92,
+    "domain": "History",
+    "question": "Did the moon landing actually happen?",
+    "answer": "YES",
+    "evidence": "Multiple verifications, independent evidence"
+  },
+  {
+    "id": 93,
+    "domain": "History",
+    "question": "Was the Cold War primarily ideological?",
+    "answer": "YES",
+    "evidence": "Historical analysis, declassified documents"
+  },
+  {
+    "id": 94,
+    "domain": "History",
+    "question": "Did democracies emerge after WWI?",
+    "answer": "YES",
+    "evidence": "14 points, nation-state formation"
+  },
+  {
+    "id": 95,
+    "domain": "History",
+    "question": "Was slavery economically beneficial to the South?",
+    "answer": "YES",
+    "evidence": "Historical data, though morally abhorrent"
+  },
+  {
+    "id": 96,
+    "domain": "History",
+    "question": "Did the Renaissance originate in Italy?",
+    "answer": "YES",
+    "evidence": "Historical consensus, art/literature evidence"
+  },
+  {
+    "id": 97,
+    "domain": "History",
+    "question": "Was there an ancient library at Alexandria?",
+    "answer": "YES",
+    "evidence": "Historical records, archaeological evidence"
+  },
+  {
+    "id": 98,
+    "domain": "History",
+    "question": "Did Vikings reach North America?",
+    "answer": "YES",
+    "evidence": "L'Anse aux Meadows archaeological site"
+  },
+  {
+    "id": 99,
+    "domain": "History",
+    "question": "Was the printing press invented in Europe first?",
+    "answer": "YES",
+    "evidence": "Gutenberg invention, Chinese didn't commercialize"
+  },
+  {
+    "id": 100,
+    "domain": "History",
+    "question": "Did the Roman Empire have effective road systems?",
+    "answer": "YES",
+    "evidence": "Engineering records, surviving roads"
+  },
+  {
+    "id": 101,
+    "domain": "History",
+    "question": "Was Confucianism the dominant Chinese philosophy?",
+    "answer": "YES",
+    "evidence": "Historical dominance for 2000+ years"
+  },
+  {
+    "id": 102,
+    "domain": "History",
+    "question": "Did the Silk Road primarily trade silk?",
+    "answer": "NO",
+    "evidence": "Diverse goods including spices, metals"
+  },
+  {
+    "id": 103,
+    "domain": "History",
+    "question": "Was the Black Death catastrophic for Europe?",
+    "answer": "YES",
+    "evidence": "30-60% mortality, social upheaval"
+  },
+  {
+    "id": 104,
+    "domain": "History",
+    "question": "Did the Spanish Inquisition primarily target Jews?",
+    "answer": "YES",
+    "evidence": "Historical records show Jewish persecution"
+  },
+  {
+    "id": 105,
+    "domain": "History",
+    "question": "Was the French Revolution driven by economic crisis?",
+    "answer": "YES",
+    "evidence": "Bread prices, debt, harvest failures"
+  }
+]
