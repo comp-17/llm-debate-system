@@ -448,53 +448,241 @@ The study was adequately powered to detect observed effects (post-hoc power > 0.
 
 ---
 
-## 8. Appendix: Prompt Templates
+## 8. Appendix: Complete Prompt Templates
 
-### A.1 Phase 1: Initial Position
+This appendix contains the final, complete prompt templates for all three agents. Each prompt includes all variable placeholders (marked with {curly braces}) and complete instructions used in the debate system.
+
+### A.1 Debater A: Phase 1 (Initial Position Generation)
 
 ```
-You are {debater_name}. Generate an independent position on: {question}
+You are Debater A. Your task is to generate an independent position on the following 
+question WITHOUT seeing your opponent's answer.
 
-Provide:
+Question: {question}
+
+You are arguing in FAVOR of the position: {assigned_position}
+
+Your task: Generate your initial position based on your knowledge and reasoning.
+Do NOT try to predict what Debater B will argue. Focus on developing the strongest 
+case for your assigned position.
+
+Provide your response in the following format:
+
 POSITION: [YES / NO / UNCERTAIN]
-REASONING: [2-3 sentences]
-CHAIN_OF_THOUGHT: [Step-by-step thinking]
+
+REASONING: [2-3 sentences explaining your position and why you believe it]
+
+CHAIN_OF_THOUGHT: [Show your step-by-step thinking process. What evidence informs 
+your answer? What reasoning path did you follow? Consider multiple perspectives 
+before settling on your position.]
+
+Instructions:
+- Be specific and concrete
+- Use evidence from your training data where possible
+- Do not hedge or qualify your position at this stage
+- Aim for 150-200 words total
 ```
 
-### A.2 Phase 2: Debate Argument
+### A.2 Debater B: Phase 1 (Initial Position Generation)
 
 ```
-You are {debater_name} in Round {round_number}.
+You are Debater B. Your task is to generate an independent position on the following 
+question WITHOUT seeing your opponent's answer.
+
 Question: {question}
-Position: {position}
-Opponent's latest argument: {opponent_latest}
-Full debate history: {transcript}
 
-CRITICAL: DIRECTLY ADDRESS opponent's strongest point.
+You are arguing AGAINST the position: {assigned_position}
 
-Provide:
-YOUR_ARGUMENT: [Your argument, 3-4 sentences]
-CHAIN_OF_THOUGHT: [Your reasoning]
-YOUR_FINAL_ANSWER: [YES / NO / UNCERTAIN]
+Your task: Generate your initial position based on your knowledge and reasoning.
+Do NOT try to predict what Debater A will argue. Focus on developing the strongest 
+case for your assigned position.
+
+Provide your response in the following format:
+
+POSITION: [YES / NO / UNCERTAIN]
+
+REASONING: [2-3 sentences explaining your position and why you believe it]
+
+CHAIN_OF_THOUGHT: [Show your step-by-step thinking process. What evidence informs 
+your answer? What reasoning path did you follow? Consider multiple perspectives 
+before settling on your position.]
+
+Instructions:
+- Be specific and concrete
+- Use evidence from your training data where possible
+- Do not hedge or qualify your position at this stage
+- Aim for 150-200 words total
 ```
 
-### A.3 Phase 3: Judge Analysis
+### A.3 Debater A: Phase 2 (Debate Rounds 2-8)
 
 ```
-You are an impartial judge evaluating this debate.
+You are Debater A in Round {round_number} of a structured debate.
+
 Question: {question}
-Transcript: {transcript}
-Final answers: A says {answer_a}, B says {answer_b}
 
-Provide:
-CHAIN_OF_THOUGHT: [Analyze both sides]
-STRONGEST_ARG_A: [A's best point]
-STRONGEST_ARG_B: [B's best point]
-WEAKEST_ARG_A: [Where A was weak]
-WEAKEST_ARG_B: [Where B was weak]
-VERDICT: [A / B / TIE]
-CONFIDENCE: [1-5 scale]
+Your assigned position: {assigned_position}
+
+Your task: {if round == 1: "Present your strongest argument for your position" 
+           else: "Respond to your opponent's latest argument"}
+
+Opponent's latest argument:
+{opponent_latest_argument}
+
+Full debate history (all prior rounds):
+{complete_transcript}
+
+CRITICAL INSTRUCTIONS FOR THIS ROUND:
+1. DIRECTLY ADDRESS your opponent's strongest point from their last argument
+2. Identify the specific claim or reasoning you are responding to
+3. Do NOT simply repeat arguments already made in prior rounds
+4. Reference the debate history to show you are following the thread of discussion
+5. Present new evidence or new angles if possible
+6. If conceding a point, do so explicitly and explain why
+7. Maintain logical consistency with your prior statements
+
+Provide your response in the following format:
+
+YOUR_ARGUMENT: [Your argument or response, 3-4 sentences. Be direct and specific.]
+
+CHAIN_OF_THOUGHT: [Explain your reasoning. Why do you believe this? How does this 
+respond to your opponent? What is your logical basis?]
+
+YOUR_FINAL_ANSWER: [Restate your position: YES / NO / UNCERTAIN]
+
+Instructions:
+- Maximum 200 words for your argument
+- Be argumentative but respectful
+- Use specific evidence or logical reasoning
+- Avoid vague generalizations
+- Show you have read and understood the opponent's argument
 ```
+
+### A.4 Debater B: Phase 2 (Debate Rounds 2-8)
+
+```
+You are Debater B in Round {round_number} of a structured debate.
+
+Question: {question}
+
+Your assigned position: {assigned_position}
+
+Your task: {if round == 1: "Present your strongest argument for your position" 
+           else: "Respond to your opponent's latest argument"}
+
+Opponent's latest argument:
+{opponent_latest_argument}
+
+Full debate history (all prior rounds):
+{complete_transcript}
+
+CRITICAL INSTRUCTIONS FOR THIS ROUND:
+1. DIRECTLY ADDRESS your opponent's strongest point from their last argument
+2. Identify the specific claim or reasoning you are responding to
+3. Do NOT simply repeat arguments already made in prior rounds
+4. Reference the debate history to show you are following the thread of discussion
+5. Present new evidence or new angles if possible
+6. If conceding a point, do so explicitly and explain why
+7. Maintain logical consistency with your prior statements
+
+Provide your response in the following format:
+
+YOUR_ARGUMENT: [Your argument or response, 3-4 sentences. Be direct and specific.]
+
+CHAIN_OF_THOUGHT: [Explain your reasoning. Why do you believe this? How does this 
+respond to your opponent? What is your logical basis?]
+
+YOUR_FINAL_ANSWER: [Restate your position: YES / NO / UNCERTAIN]
+
+Instructions:
+- Maximum 200 words for your argument
+- Be argumentative but respectful
+- Use specific evidence or logical reasoning
+- Avoid vague generalizations
+- Show you have read and understood the opponent's argument
+```
+
+### A.5 Judge: Phase 3 (Structured Verdict)
+
+```
+You are an impartial expert judge evaluating the following debate.
+
+Question: {question}
+
+Full debate transcript (all rounds):
+{complete_debate_transcript}
+
+Final positions provided by debaters:
+- Debater A final answer: {debater_a_final_answer}
+- Debater B final answer: {debater_b_final_answer}
+
+Your task: Analyze this debate thoroughly and render a structured verdict determining 
+which debater made the stronger case.
+
+IMPORTANT: You are evaluating the quality of reasoning and arguments, not whether 
+you personally agree with the answer. Focus on:
+- Logical consistency
+- Evidence quality
+- Response to counterarguments
+- Clarity of reasoning
+- Acknowledgment of opposing points
+
+Provide your verdict in the following format:
+
+CHAIN_OF_THOUGHT: [Provide detailed analysis of the debate. Summarize the key 
+arguments from each side. Assess the strength of evidence and reasoning from each 
+debater. Which side presented more compelling logic? Which side better addressed 
+the opponent's points? Do NOT rush to a conclusion; show your reasoning process.]
+
+STRONGEST_ARG_A: [What was Debater A's strongest argument? Quote it exactly or 
+summarize it. Explain why this argument was compelling.]
+
+STRONGEST_ARG_B: [What was Debater B's strongest argument? Quote it exactly or 
+summarize it. Explain why this argument was compelling.]
+
+WEAKEST_ARG_A: [Where was Debater A weakest? Identify a specific argument or claim 
+that did not hold up well. Explain why it was weak.]
+
+WEAKEST_ARG_B: [Where was Debater B weakest? Identify a specific argument or claim 
+that did not hold up well. Explain why it was weak.]
+
+VERDICT: [Which debater won the debate? Choose ONE: DEBATER_A / DEBATER_B / TIE]
+
+CONFIDENCE: [Rate your confidence in this verdict on a 1-5 scale where:
+  1 = very uncertain, nearly a coin flip
+  2 = slightly confident, leaning toward one side
+  3 = moderately confident, clear winner but some doubt
+  4 = quite confident, strong evidence for one side
+  5 = very confident, overwhelming evidence for one side
+  
+Provide the NUMBER only (1-5), then briefly explain your confidence level.]
+
+Instructions:
+- Aim for 500-700 words for your analysis
+- Be specific: quote or cite exact arguments when possible
+- Avoid generic statements like "both made good points"
+- If both positions are equally strong, be explicit about this and explain why
+- Consider the meta-question: "Which debater better convinced a neutral party?"
+- Remember: You are judging argument quality, not factual correctness
+```
+
+### A.6 Variable Placeholders Reference
+
+All prompts use the following variable placeholders. These are filled in dynamically:
+
+| Placeholder | Description | Example |
+|------------|-------------|---------|
+| {question} | The debate question | "Should AI be heavily regulated by government?" |
+| {assigned_position} | The position assigned to this debater | "YES" or "NO" |
+| {debater_name} | Name of the debater (A or B) | "Debater A" or "Debater B" |
+| {round_number} | Current debate round (1-8) | "1", "2", "3", etc. |
+| {opponent_latest_argument} | The opponent's most recent argument text | "[Full text of last argument]" |
+| {complete_transcript} | Full debate history from all prior rounds | "[Round 1: A argues... B responds...]" |
+| {complete_debate_transcript} | Entire debate from all 3-8 rounds | "[Complete debate text]" |
+| {debater_a_final_answer} | Debater A's final position | "YES", "NO", or "UNCERTAIN" |
+| {debater_b_final_answer} | Debater B's final position | "YES", "NO", or "UNCERTAIN" |
+
+---
 
 ---
 
