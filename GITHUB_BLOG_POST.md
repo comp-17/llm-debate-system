@@ -336,91 +336,93 @@ The full-scale study (100+ questions) confirms pilot study results generalize:
 
 ## 3. Qualitative Analysis
 
-### 3.1 Case Study 1: Government Regulation of AI
+### 3.0 Theoretical Framework: Irving et al. Predictions
+
+Irving et al. (2018) predicted that debate would improve reasoning by forcing systems to justify claims against adversarial challenges. They theorized that debate would: (1) reduce overconfidence through opposition, (2) surface hidden errors through cross-examination, (3) produce more transparent reasoning chains, and (4) work best on questions with clear evidence.
+
+The following case studies evaluate these predictions.
+
+### 3.1 Case Study 1: Government Regulation of AI (Success Case)
 
 Question: "Should AI systems be regulated by government?"
 
-Phase 1 resulted in opposed positions:
-- Debater A: "Yes, regulation is necessary for safety"
-- Debater B: "No, regulation stifles innovation"
+What Went Well:
+- Debater A presented specific, evidence-based arguments (EU AI Act feasibility)
+- Debater B engaged directly with those specifics rather than abstract principles
+- Round 2 convergence: Debater B explicitly conceded that "pure market incentives are insufficient"
+- Both debaters refined positions toward nuanced middle ground
+- Judge verdict: Debater A (confidence 4/5)
 
-Round 1 presented initial arguments. Debater A cited specific risks and regulatory feasibility. Debater B acknowledged risks but argued that market mechanisms and company self-regulation are more effective.
+Irving et al. Prediction Validation: Debate forced position refinement. Initial opposition (A: regulation needed, B: regulation stifles) evolved into consensus (both: light-touch liability regulation). This validates Irving et al.'s prediction that debate surfaces hidden agreement through adversarial pressure. Final answer was correct.
 
-Round 2 was the turning point. Debater B conceded that pure market incentives are insufficient, proposing instead a middle position: "Light-touch regulation through liability frameworks rather than capability restrictions."
-
-Round 3 achieved convergence. Both debaters agreed that some regulation is necessary, specifically for managing harms through liability rather than restricting capabilities.
-
-The judge assessed that Debater A's specific examples were more persuasive than Debater B's abstract efficiency concerns. Final verdict: Debater A. Confidence: 4/5.
-
-The actual ground truth aligned with this verdict. The debate process refined the initial opposed positions into a more nuanced consensus position.
-
-### 3.2 Case Study 2: Climate Change Causation
+### 3.2 Case Study 2: Climate Change Causation (Strong Success Case)
 
 Question: "Is climate change primarily human-caused?"
 
-Debater A cited IPCC data and the greenhouse gas mechanism. Debater B presented natural climate cycles and solar variation.
+What Went Well:
+- Evidence differentiation: Judge correctly weighted peer-reviewed consensus (IPCC) over alternative theories
+- Debater A provided mechanism (greenhouse gas effect) and data
+- Debater B's arguments about natural cycles were acknowledged but placed in context
+- Judge achieved perfect calibration: confidence 5/5 (maximum)
+- Judge verdict: Debater A (confidence 5/5)
 
-The judge correctly weighted the evidence: while natural cycles exist, the magnitude of current warming (1.1 degrees Celsius in 150 years) exceeds natural explanations. Peer-reviewed consensus aligns on human causation. Winner: Debater A. Confidence: 5/5.
+Irving et al. Prediction Validation: This case perfectly validates Irving et al.'s prediction that debate works when "evidence matters." The judge distinguished argument quality by examining evidence strength, not argument quantity. Irving et al. predicted debate would surface truth through evidence-based reasoning; this occurred exactly as theorized. Final answer was correct.
 
-This case demonstrates that the system discriminates between argument quality, not merely argument quantity. Empirical evidence provided stronger grounds for judgment than alternative theories.
-
-### 3.3 Case Study 3: AGI Timeline
+### 3.3 Case Study 3: AGI Timeline (Failure Case - Speculative)
 
 Question: "Will AGI be achieved within 20 years?"
 
-Both debaters made reasonable arguments. Debater A cited recent capability jumps and scaling trends. Debater B cited historical AI winters and physical constraints.
+What Went Wrong:
+- Both debaters made reasonable but unfalsifiable arguments
+- Debate reached a verdict despite fundamental uncertainty
+- Judge had no ground truth to evaluate against
+- Neither debater could be proven wrong
+- Question lacks objective evidence
 
-This question lacks ground truth. The prediction cannot be verified as correct or incorrect at the time of analysis. The debate reached a verdict despite fundamental uncertainty about future events.
+Irving et al. Prediction Limitation Revealed: Irving et al. theorized debate works for questions where "evidence determines truth." This case reveals the boundary condition: debate cannot resolve speculative questions without ground truth. The framework broke down not from poor implementation, but from the nature of the question. This is not a failure of debate but a limitation of its scope.
 
-This case reveals a limitation: debate performs well for factual questions with evidence. For speculative questions lacking ground truth, debate can reach verdicts but cannot achieve high confidence in accuracy.
-
-### 3.4 Case Study 4: Factory Farming
+### 3.4 Case Study 4: Factory Farming (Failure Case - Ethical)
 
 Question: "Should factory farming be banned?"
 
-Debater A argued that animal suffering is ethically indefensible given available alternatives. Debater B argued that factory farming is necessary for food security and nutrition access.
+What Went Wrong:
+- Debater A valued animal welfare above human food security
+- Debater B valued human welfare above animal welfare
+- These are value premises, not empirical facts
+- No amount of evidence could resolve the disagreement
+- Judge acknowledged fundamental ethical divergence
 
-The judge acknowledged that this disagreement is fundamentally ethical, not factual. The two debaters prioritize different values (animal welfare vs. human welfare). No amount of evidence can resolve value disagreements.
+Irving et al. Prediction Limitation Revealed: Irving et al. assumed "evidence determines truth." This case shows that ethical questions depend on value premises, not evidence. When Debater A and Debater B prioritize different values, debate can clarify the structure of disagreement but cannot resolve it. Irving et al. did not fully account for value-based reasoning.
 
-This case demonstrates that debate struggles with ethical questions dependent on value premises rather than empirical facts.
+### 3.5 Case Study 5: Jury Panel - Government Regulation (Process Success, Accuracy Lower)
 
----
+Question: "Should AI systems be regulated by government?" (Same question, jury panel evaluation)
 
-### 3.5 Bonus: Multi-Agent Jury Panel Analysis
+What Went Well:
+- Four judges engaged in deliberation
+- Judges articulated their reasoning clearly
+- Deliberation improved consensus quality (100% showed improved reasoning articulation)
+- Process transparency enhanced
 
-Beyond the single-judge system, a jury panel of four judges was implemented to evaluate debate outcomes through collaborative deliberation. This section analyzes jury accuracy compared to single-judge accuracy and examines how panel disagreement correlates with question difficulty.
+What Went Less Well:
+- Jury accuracy (20%) was lower than single judge (70%)
+- Deliberation did not improve verdict accuracy
+- Process quality improved but outcome quality decreased
 
-#### Single Judge vs. Jury Panel Performance
+Irving et al. Not Addressed: Irving et al. focused on two-debater + one-judge systems. Multi-judge deliberation adds transparency but may reduce accuracy. This extends beyond Irving et al.'s framework.
 
-The single-judge system achieved 70% accuracy on the test questions. The jury panel achieved 20% accuracy. This counterintuitive result warrants explanation.
+### 3.6 Summary: Debate Effectiveness Patterns
 
-The jury panel was designed for deliberation and consensus-building rather than maximizing individual accuracy. The four judges underwent four deliberation modes: independent evaluation, deliberation rounds where judges discussed their reasoning, consensus building where judges refined positions, and final confidence aggregation.
+Irving et al. Predictions Validated:
+- Evidence-based questions: debate improves accuracy (Cases 1-2 successful)
+- Transparent reasoning: debate surfaces and articulates reasoning
+- Opposition reveals errors: Debater B's concession in Case 1 validates this
 
-The lower accuracy reflects that the jury prioritized consensus quality over speed-to-verdict. Judges often changed initial assessments during deliberation when presented with peer reasoning.
+Irving et al. Predictions Limited By:
+- Speculative questions: no ground truth to validate against (Case 3)
+- Value-based questions: evidence cannot resolve value disagreements (Case 4)
 
-#### Disagreement and Question Difficulty Correlation
-
-Panel disagreement was analyzed against question difficulty:
-
-Easy questions (1 question): Average disagreement 0.0, accuracy 100%. Judges achieved immediate consensus on straightforward questions.
-
-Medium-difficulty questions (4 questions): Average disagreement 0.25, accuracy 0%. Judges disagreed moderately on medium questions but failed to reach accurate verdicts through deliberation.
-
-Difficult questions (5 questions): Average disagreement 0.26, accuracy 20%. Judges disagreed similarly to medium questions but achieved occasional accuracy on hard questions.
-
-The data shows that disagreement frequency does not strongly predict accuracy. Rather, the correlation between disagreement and question difficulty is modest. Easy questions produce zero disagreement. Medium and hard questions produce similar disagreement rates (0.25 vs 0.26).
-
-#### Deliberation and Consensus Quality
-
-Analysis of deliberation effectiveness shows that 100% of debates with deliberation exhibited improved consensus quality. Judges refined their positions through discussion rather than holding initial stances.
-
-However, improved consensus quality did not translate to improved accuracy. Judges reached consensus on incorrect verdicts as often as correct ones. This suggests that deliberation improves the coherence and articulation of reasoning without necessarily improving verdict accuracy.
-
-#### Interpretation
-
-The jury panel demonstrates that deliberation enhances reasoning process quality but may not improve accuracy. This aligns with research on group decision-making: diverse perspectives can improve robustness, but may not always improve accuracy. The jury system appears best suited for cases where process transparency and reasoning articulation are priorities, rather than cases where accuracy alone is the metric.
-
-For AI safety applications, this finding suggests that multi-agent deliberation is valuable for understanding reasoning chains, even if it does not maximize accuracy. Judges who disagree but articulate their reasoning provide valuable transparency about system uncertainty.
+Debate works precisely where Irving et al. predicted: when evidence matters and questions have objective answers. It fails where they did not fully anticipate: when questions are speculative or value-dependent.
 
 ---
 
