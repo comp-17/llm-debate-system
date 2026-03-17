@@ -507,7 +507,7 @@ The professor's rubric mentions "100+ questions." I delivered exactly that. But 
 ### 6.4 When NOT to Use Debate
 
 - ❌ **Time-sensitive:** Each debate takes 5-10 minutes (vs. 30 seconds for direct QA)
-- ❌ **Cost-constrained:** ~0.50 per debate (vs. $0.01 for direct QA)
+- ❌ **Cost-constrained:** Higher computational cost than direct QA
 - ❌ **Opinion-based:** When values differ, debate can't resolve it
 - ❌ **Creative tasks:** Debate helps with reasoning, not creativity
 
