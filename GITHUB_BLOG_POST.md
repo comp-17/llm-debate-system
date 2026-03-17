@@ -998,7 +998,6 @@ All primary hypotheses were supported with statistical significance:
 
 The study was adequately powered to detect observed effects (post-hoc power > 0.95 for primary comparison). Confidence intervals are narrow, indicating precise estimates.
 
-This appendix contains the final, complete prompt templates for all three agents. Each prompt is presented with all variable placeholders (marked with {curly braces}) clearly marked. Use the collapsible sections below to view each prompt verbatim.
 
 ### A.1 Debater A: Phase 1 (Initial Position)
 
