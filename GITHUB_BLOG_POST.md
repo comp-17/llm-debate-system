@@ -60,7 +60,7 @@ This project used Claude (Anthropic) as an LLM tool for:
 
 **Code Development:**
 - Formatting the architecture
-- Code generation for debate orchestrator, agents, and evaluation and testing modules
+- Code generation portions for debate orchestrator, agents, and evaluation and testing modules
 
 **Blog Post Development:**
 - Style editing of content and condensing
