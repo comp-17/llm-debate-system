@@ -1,4 +1,4 @@
-# Multi-Agent LLM Debate System: AI Safety via Adversarial Debate
+# Multi-Agent LLM Debate System
 ## A Comprehensive Study with 100+ Questions
 
 **Author:** Susheela Sri Akunuru  
