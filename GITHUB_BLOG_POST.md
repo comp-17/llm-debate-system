@@ -78,9 +78,46 @@ The judge receives the complete debate transcript and produces a seven-component
 
 The judge's verdict is compared against ground truth. All intermediate data are recorded for analysis.
 
-### 1.3 Implementation Details
+### 1.3 Implementation Details and Justification
 
-The system used Claude 3.5 Sonnet as the base model. Debaters operated at temperature 0.7 to enable exploration of the solution space. The judge operated at temperature 0.5 to prioritize consistency. Debaters received maximum 600 tokens per response, and judges received maximum 1500 tokens to accommodate the seven-part verdict structure.
+**Model Selection: Claude 3.5 Sonnet**
+
+Claude 3.5 Sonnet was selected as the base model for all three agents (Debater A, Debater B, and Judge) based on the following criteria:
+
+- Reasoning capability: Claude 3.5 Sonnet demonstrates superior performance on complex reasoning and argumentation tasks compared to alternatives (GPT-4o, Llama 2), making it well-suited for adversarial debate where systems must justify positions against challenges.
+- Consistency: Produces stable outputs across multiple invocations, important for ensuring debate quality does not vary due to model stochasticity.
+- Cost-effectiveness: Provides a good balance between capability and API cost, enabling large-scale experiments (100+ debates).
+- Context window: 200,000 token context enables full debate transcripts to be provided to all agents without truncation.
+
+**Configuration and Hyperparameters**
+
+The following configuration parameters were used consistently across all experiments:
+
+| Parameter | Value | Justification |
+|-----------|-------|---------------|
+| Base Model | Claude 3.5 Sonnet | Best reasoning capability for debate tasks |
+| Debater Temperature | 0.7 | Balances exploration of solution space (higher variance) with coherent argumentation |
+| Judge Temperature | 0.5 | Lower temperature prioritizes consistent, decisive verdicts over variance |
+| Debater Max Tokens | 600 | Sufficient for 3-4 sentence arguments with supporting reasoning |
+| Judge Max Tokens | 1500 | Necessary to accommodate 7-component verdict structure |
+| Debate Rounds | 3-8 | Minimum ensures substantive exchange; maximum manages computational cost |
+| Convergence Criterion | 2 consecutive rounds same answer | Provides confidence in stability without excessive rounds |
+| Context Provision | Full transcript history | Enables sophisticated rebuttals referencing prior exchanges |
+| Stopping Rule | Early termination if consensus | Optimizes for efficiency when positions stabilize |
+
+**Debate Protocol Details**
+
+The debate protocol follows strict role assignment and information flow:
+
+1. **Role Assignment:** Each debater receives explicit role (Debater A or Debater B) with assigned position (YES/NO/UNCERTAIN). This role clarity reduces confusion and ensures debaters remain committed to positions.
+
+2. **Information Asymmetry Management:** Phase 1 maintains strict independence (debaters do not see each other's positions). Phase 2 provides complete transcript history to both debaters, ensuring all agents have identical information about prior exchanges.
+
+3. **Output Standardization:** All debater responses must follow identical format (ARGUMENT, CHAIN_OF_THOUGHT, FINAL_ANSWER). Judge responses follow 7-component format. This standardization enables reliable parsing and consistent evaluation.
+
+4. **Engagement Requirement:** Explicit instruction to "DIRECTLY ADDRESS opponent's strongest point" forces substantive engagement rather than talking past each other.
+
+5. **Temperature Differentiation:** Debaters at 0.7 temperature to maintain diversity in argumentation; judge at 0.5 temperature to prioritize certainty in verdicts. This reflects the different objectives: debaters should explore multiple arguments, judges should make definitive decisions.
 
 ### 1.4 Dataset
 
