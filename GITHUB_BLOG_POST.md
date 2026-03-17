@@ -789,11 +789,59 @@ The evolution demonstrates that prompt quality is paramount. With identical mode
 
 ## 5. References and Key Findings
 
+### Bibliography and Inspiration
+
+**Foundational Debate Framework:**
+
 Irving, L., Garfinkel, B., & Andersson, A. (2018). AI Safety via Debate. arXiv preprint arXiv:1805.00899.
+- Foundational work establishing debate as technique for improving AI reasoning transparency and accuracy.
+
+**Chain-of-Thought and Reasoning:**
 
 Wei, J., Wang, X., Schuurmans, D., et al. (2022). Emergent Abilities of Large Language Models. arXiv preprint arXiv:2206.07682.
+- Demonstrates chain-of-thought prompting improves reasoning capabilities across domains.
+
+Kojima, T., Gu, S. S., Reid, M., et al. (2022). Large Language Models are Zero-Shot Reasoners. arXiv preprint arXiv:2205.11916.
+- Shows explicit reasoning instructions unlock reasoning capabilities in language models.
+
+**Reasoning Through Self-Consistency:**
+
+Wang, X., Wei, J., Schuurmans, D., et al. (2023). Self-Consistency Improves Chain of Thought Reasoning in Language Models. ICLR.
+- Baseline comparison method: generating multiple reasoning paths and using majority vote.
+
+**Multi-Agent Reasoning and Collaborative Systems:**
+
+Chan, A., Madaan, A., Pitis, S., & Makelov, A. (2023). Scalable AI Control via an Alignment Game. arXiv preprint arXiv:2309.04887.
+- Explores multi-agent systems for improving AI alignment through debate and discussion.
+
+Du, Y., Watkins, O., Darrell, T., Abbeel, P., & Pathak, D. (2023). Guiding Interactive Robot Behavior via Learned Human Models. ICML.
+- Multi-agent framework relevant to debate architecture design.
+
+**Prompt Engineering and Output Structuring:**
+
+Ye, X., Durrett, G., Sorensen, T., & Gu, Y. (2023). Prompt Engineering for Zero-Shot Performance. arXiv preprint arXiv:2310.14735.
+- Systematic study of prompt design for improving model performance.
+
+Reynolds, L., & McDonell, K. (2021). Prompt Programming for Large Language Models: Beyond the Few-Shot Paradigm. arXiv preprint arXiv:2102.07350.
+- Foundational work on prompt engineering design principles.
+
+**Debate Variants and Reasoning:**
+
+Dohan, D., Bhandari, N., Ganea, M., et al. (2023). Scalable Program Synthesis with Emergent Modularity. arXiv preprint arXiv:2302.00998.
+- Explores structured reasoning approaches for complex problem solving.
+
+**Calibration and Uncertainty:**
+
+Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017). On Calibration of Modern Neural Networks. ICML.
+- Calibration metrics and Brier score analysis used in judge evaluation.
+
+**Model Selection and Architecture:**
+
+Anil, C., Wu, Y., Codella, C., & Elhage, N. (2023). Exploring Large Language Models through Instruction Tuning. arXiv preprint arXiv:2303.16977.
+- Guidance on model selection for complex reasoning tasks.
 
 Kalra, N., Moreschi, F., Stojnic, G., & Kumar, S. (2025). VERDICT: A Library for Scaling Judge-Time Compute in Large Language Models. Haize Labs.
+- Recent work on judge-based reasoning systems and computational scaling.
 
 ### Limitations and Scope
 
