@@ -54,28 +54,6 @@ This finding indicates that debate is a targeted technique for factual reasoning
 
 ## 1. Methodology
 
-### 1.0 Assignment Requirements Met
-
-This study fulfills all requirements from the assignment:
-
-**Requirement 1: Build a complete Debate + Judge pipeline**
-The system implements a full 4-phase pipeline: (1) independent initialization, (2) multi-round debate, (3) structured judgment, (4) evaluation. All components are fully functional and documented.
-
-**Requirement 2: Two LLM agents argue opposing sides**
-Debater A and Debater B are assigned to argue opposite positions. Each receives the same question independently and generates opposing answers, then engages in 3-8 rounds of debate. See Section 3 for detailed transcripts showing this adversarial interaction.
-
-**Requirement 3: Third LLM serves as judge**
-The judge component receives the complete debate transcript and produces a structured 7-component verdict. The judge is a separate LLM instance that does not participate in the debate.
-
-**Requirement 4: Architecture draws on Irving, Christiano & Amodei (2018)**
-The 4-phase design directly implements their debate framework. See Section 5 for detailed connection to their foundational work.
-
-**Requirement 5: Incorporates Liang et al. (EMNPIP 2024) and Kenton et al. (NeurIPS 2024)**
-The system incorporates divergent thinking from Liang et al. and structured judging from Kenton et al. See Section 5 for detailed integration of these recent advances.
-
-**Requirement 6: Investigate core research question**
-The core question "Can structured debate produce more accurate and well-reasoned answers than direct QA?" is explicitly investigated and answered. Results show 86.3% accuracy for debate vs. 68% for direct QA (p < 0.001).
-
 ---
 
 ### 1.1 Theoretical Foundation
