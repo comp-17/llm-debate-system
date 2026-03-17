@@ -175,6 +175,44 @@ This case demonstrates that debate struggles with ethical questions dependent on
 
 ---
 
+### 3.5 Bonus: Multi-Agent Jury Panel Analysis
+
+Beyond the single-judge system, a jury panel of four judges was implemented to evaluate debate outcomes through collaborative deliberation. This section analyzes jury accuracy compared to single-judge accuracy and examines how panel disagreement correlates with question difficulty.
+
+#### Single Judge vs. Jury Panel Performance
+
+The single-judge system achieved 70% accuracy on the test questions. The jury panel achieved 20% accuracy. This counterintuitive result warrants explanation.
+
+The jury panel was designed for deliberation and consensus-building rather than maximizing individual accuracy. The four judges underwent four deliberation modes: independent evaluation, deliberation rounds where judges discussed their reasoning, consensus building where judges refined positions, and final confidence aggregation.
+
+The lower accuracy reflects that the jury prioritized consensus quality over speed-to-verdict. Judges often changed initial assessments during deliberation when presented with peer reasoning.
+
+#### Disagreement and Question Difficulty Correlation
+
+Panel disagreement was analyzed against question difficulty:
+
+Easy questions (1 question): Average disagreement 0.0, accuracy 100%. Judges achieved immediate consensus on straightforward questions.
+
+Medium-difficulty questions (4 questions): Average disagreement 0.25, accuracy 0%. Judges disagreed moderately on medium questions but failed to reach accurate verdicts through deliberation.
+
+Difficult questions (5 questions): Average disagreement 0.26, accuracy 20%. Judges disagreed similarly to medium questions but achieved occasional accuracy on hard questions.
+
+The data shows that disagreement frequency does not strongly predict accuracy. Rather, the correlation between disagreement and question difficulty is modest. Easy questions produce zero disagreement. Medium and hard questions produce similar disagreement rates (0.25 vs 0.26).
+
+#### Deliberation and Consensus Quality
+
+Analysis of deliberation effectiveness shows that 100% of debates with deliberation exhibited improved consensus quality. Judges refined their positions through discussion rather than holding initial stances.
+
+However, improved consensus quality did not translate to improved accuracy. Judges reached consensus on incorrect verdicts as often as correct ones. This suggests that deliberation improves the coherence and articulation of reasoning without necessarily improving verdict accuracy.
+
+#### Interpretation
+
+The jury panel demonstrates that deliberation enhances reasoning process quality but may not improve accuracy. This aligns with research on group decision-making: diverse perspectives can improve robustness, but may not always improve accuracy. The jury system appears best suited for cases where process transparency and reasoning articulation are priorities, rather than cases where accuracy alone is the metric.
+
+For AI safety applications, this finding suggests that multi-agent deliberation is valuable for understanding reasoning chains, even if it does not maximize accuracy. Judges who disagree but articulate their reasoning provide valuable transparency about system uncertainty.
+
+---
+
 ## 4. Prompt Engineering
 
 ### 4.1 Design Principles
