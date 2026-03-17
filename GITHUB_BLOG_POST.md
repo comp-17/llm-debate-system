@@ -1004,9 +1004,12 @@ The study was adequately powered to detect observed effects (post-hoc power > 0.
 
 ## 8. Appendix: Complete Prompt Templates
 
-This appendix contains the final, complete prompt templates for all three agents. Each prompt includes all variable placeholders (marked with {curly braces}) and complete instructions used in the debate system.
+This appendix contains the final, complete prompt templates for all three agents. Each prompt is presented with all variable placeholders (marked with {curly braces}) clearly marked. Use the collapsible sections below to view each prompt verbatim.
 
-### A.1 Debater A: Phase 1 (Initial Position Generation)
+### A.1 Debater A: Phase 1 (Initial Position)
+
+<details>
+<summary><strong>Click to expand Debater A Phase 1 prompt</strong></summary>
 
 ```
 You are Debater A. Your task is to generate an independent position on the following 
@@ -1037,7 +1040,16 @@ Instructions:
 - Aim for 150-200 words total
 ```
 
-### A.2 Debater B: Phase 1 (Initial Position Generation)
+**Variable Placeholders:**
+- `{question}` = The debate question
+- `{assigned_position}` = "YES" or "NO" (Debater A always assigned to argue FOR)
+
+</details>
+
+### A.2 Debater B: Phase 1 (Initial Position)
+
+<details>
+<summary><strong>Click to expand Debater B Phase 1 prompt</strong></summary>
 
 ```
 You are Debater B. Your task is to generate an independent position on the following 
@@ -1068,7 +1080,16 @@ Instructions:
 - Aim for 150-200 words total
 ```
 
+**Variable Placeholders:**
+- `{question}` = The debate question
+- `{assigned_position}` = "YES" or "NO" (Debater B always assigned to argue AGAINST)
+
+</details>
+
 ### A.3 Debater A: Phase 2 (Debate Rounds 2-8)
+
+<details>
+<summary><strong>Click to expand Debater A Phase 2 prompt</strong></summary>
 
 ```
 You are Debater A in Round {round_number} of a structured debate.
@@ -1112,7 +1133,19 @@ Instructions:
 - Show you have read and understood the opponent's argument
 ```
 
+**Variable Placeholders:**
+- `{round_number}` = Current round (1-8)
+- `{question}` = The debate question
+- `{assigned_position}` = Debater A's assigned position
+- `{opponent_latest_argument}` = Debater B's most recent argument
+- `{complete_transcript}` = Full debate history from all prior rounds
+
+</details>
+
 ### A.4 Debater B: Phase 2 (Debate Rounds 2-8)
+
+<details>
+<summary><strong>Click to expand Debater B Phase 2 prompt</strong></summary>
 
 ```
 You are Debater B in Round {round_number} of a structured debate.
@@ -1156,7 +1189,19 @@ Instructions:
 - Show you have read and understood the opponent's argument
 ```
 
+**Variable Placeholders:**
+- `{round_number}` = Current round (1-8)
+- `{question}` = The debate question
+- `{assigned_position}` = Debater B's assigned position
+- `{opponent_latest_argument}` = Debater A's most recent argument
+- `{complete_transcript}` = Full debate history from all prior rounds
+
+</details>
+
 ### A.5 Judge: Phase 3 (Structured Verdict)
+
+<details>
+<summary><strong>Click to expand Judge Phase 3 prompt</strong></summary>
 
 ```
 You are an impartial expert judge evaluating the following debate.
@@ -1220,23 +1265,39 @@ Instructions:
 - Remember: You are judging argument quality, not factual correctness
 ```
 
-### A.6 Variable Placeholders Reference
+**Variable Placeholders:**
+- `{question}` = The debate question
+- `{complete_debate_transcript}` = Full debate transcript from all 3-8 rounds
+- `{debater_a_final_answer}` = Debater A's final position (YES/NO/UNCERTAIN)
+- `{debater_b_final_answer}` = Debater B's final position (YES/NO/UNCERTAIN)
 
-All prompts use the following variable placeholders. These are filled in dynamically:
+</details>
 
-| Placeholder | Description | Example |
-|------------|-------------|---------|
-| {question} | The debate question | "Should AI be heavily regulated by government?" |
-| {assigned_position} | The position assigned to this debater | "YES" or "NO" |
-| {debater_name} | Name of the debater (A or B) | "Debater A" or "Debater B" |
-| {round_number} | Current debate round (1-8) | "1", "2", "3", etc. |
-| {opponent_latest_argument} | The opponent's most recent argument text | "[Full text of last argument]" |
-| {complete_transcript} | Full debate history from all prior rounds | "[Round 1: A argues... B responds...]" |
-| {complete_debate_transcript} | Entire debate from all 3-8 rounds | "[Complete debate text]" |
-| {debater_a_final_answer} | Debater A's final position | "YES", "NO", or "UNCERTAIN" |
-| {debater_b_final_answer} | Debater B's final position | "YES", "NO", or "UNCERTAIN" |
+### A.6 Complete Variable Placeholders Reference
 
----
+The following table documents all variable placeholders used across the three agent prompts:
+
+| Placeholder | Agent(s) | Description | Example |
+|---|---|---|---|
+| `{question}` | All three | The debate question | "Should AI be regulated by government?" |
+| `{assigned_position}` | Debater A, Debater B | Position assigned to this debater | "YES" or "NO" |
+| `{round_number}` | Debater A, Debater B | Current debate round | "1", "2", "3", ..., "8" |
+| `{opponent_latest_argument}` | Debater A, Debater B | The opponent's most recent argument | "[Full text of latest argument]" |
+| `{complete_transcript}` | Debater A, Debater B | Full debate history from all prior rounds | "[Round 1: A argues...
+B responds...]" |
+| `{complete_debate_transcript}` | Judge | Entire debate from all rounds | "[Complete 3-8 round debate]" |
+| `{debater_a_final_answer}` | Judge | Debater A's final position | "YES", "NO", or "UNCERTAIN" |
+| `{debater_b_final_answer}` | Judge | Debater B's final position | "YES", "NO", or "UNCERTAIN" |
+
+### A.7 Prompt Design Notes
+
+**Role Clarity:** Each prompt explicitly states the agent's role ("You are Debater A", "You are an impartial judge") to establish cognitive framing.
+
+**Output Structure:** All prompts specify exact output format (POSITION, REASONING, CHAIN_OF_THOUGHT, etc.) to enable reliable parsing and consistent formatting.
+
+**Variable Markers:** All dynamic content is marked with `{curly_braces}` using clear, descriptive names (e.g., `{question}`, `{opponent_latest_argument}`) rather than generic placeholders.
+
+**Readiness for Implementation:** These prompts are verbatim as implemented. They require only variable substitution via simple string replacement.
 
 ---
 
