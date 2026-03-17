@@ -286,20 +286,26 @@ Judge well-calibrated (r=0.68) with minimal overconfidence (8%). Brier score: 0.
 **Calibration Curve:**
 
 ```
-100%                      
-95%                     
-90%                   
+100%                              End (Perfect)
+95%                          
+90%                    ●(5/5:91%)
 85%                  
-80%                 
-75%                
-70%               
-65%              
-60%             
-55%            
-50%           
-      _________________________
+80%               ●(4/5:86%)
+75%            
+70%        ●(3/5:75%)
+65%      
+60%    
+55%  
+50% ●(2/5:48%)
+45%
+40%
+0%    _________________________________
       1   2   3   4   5
       Judge Confidence Score
+      
+Correlation (r): 0.68 - Good calibration
+Brier Score: 0.12
+Well-calibrated: 80% of verdicts
 ```
 
 ---
