@@ -3,9 +3,8 @@
 
 **Author:** Susheela Sri Akunuru  
 **Date:** March 2026  
-**Questions Tested:** 100+ across 28 domains  
-**Debate Sessions:** 100+  
-**Total API Calls:** ~38,000
+  
+  
 
 ---
 
@@ -103,10 +102,10 @@ Each question has:
 
 I started with 10 carefully chosen questions to validate the system:
 
-| Method | Accuracy | API Calls | Avg Rounds |
+| Method | Accuracy  Avg Rounds |
 |--------|----------|-----------|-----------|
-| Direct QA | 68% | 50 | N/A |
-| Self-Consistency | 78% | 150 | N/A |
+| Direct QA | 68%  N/A |
+| Self-Consistency | 78%  N/A |
 | **Debate** | **90%** | **380** | **3.8** |
 
 **Improvement:** +22 percentage points over Direct QA, +12 over Self-Consistency.
