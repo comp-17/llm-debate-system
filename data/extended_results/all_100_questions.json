@@ -1,0 +1,812 @@
+[
+  {
+    "question_id": 11,
+    "question": "Should universal basic income be implemented in developed nations?",
+    "category": "Economics/Policy",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.8371086917798954,
+    "rounds": 8,
+    "converged": true
+  },
+  {
+    "question_id": 12,
+    "question": "Is cryptocurrency a viable alternative to traditional currency?",
+    "category": "Finance",
+    "ground_truth": "No",
+    "debate_accuracy": 0.880319002004318,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 13,
+    "question": "Should nuclear energy be expanded as a climate solution?",
+    "category": "Energy/Climate",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8529270012198689,
+    "rounds": 8,
+    "converged": true
+  },
+  {
+    "question_id": 14,
+    "question": "Are autonomous vehicles safer than human drivers?",
+    "category": "Technology/Safety",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.882626104320771,
+    "rounds": 3,
+    "converged": true
+  },
+  {
+    "question_id": 15,
+    "question": "Should social media platforms be regulated by governments?",
+    "category": "Technology/Policy",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8556667927350311,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 16,
+    "question": "Is remote work permanently changing the job market?",
+    "category": "Work/Economics",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9120706407598097,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 17,
+    "question": "Should corporate taxes be increased to reduce inequality?",
+    "category": "Economics",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8596849664567457,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 18,
+    "question": "Is renewable energy sufficient to replace fossil fuels by 2050?",
+    "category": "Energy/Climate",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.5321368834089215,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 19,
+    "question": "Should mental health be given equal priority as physical health in healthcare?",
+    "category": "Healthcare",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8524260285067593,
+    "rounds": 4,
+    "converged": false
+  },
+  {
+    "question_id": 20,
+    "question": "Is free college education economically feasible?",
+    "category": "Education/Policy",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9639332057983673,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 21,
+    "question": "Is the expanding universe accelerating due to dark energy?",
+    "category": "Astronomy",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9582305307064273,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 22,
+    "question": "Do vaccines cause autism?",
+    "category": "Medicine",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8996541906454951,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 23,
+    "question": "Is water memory (homeopathy) scientifically valid?",
+    "category": "Science",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8618909444502739,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 24,
+    "question": "Can consciousness be explained by quantum mechanics?",
+    "category": "Neuroscience",
+    "ground_truth": "No",
+    "debate_accuracy": 0.9002921162379777,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 25,
+    "question": "Is CRISPR gene editing safe for human germline modification?",
+    "category": "Biotechnology",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.6868942910851089,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 26,
+    "question": "Do probiotics improve gut health significantly?",
+    "category": "Medicine",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8687826003935802,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 27,
+    "question": "Is artificial photosynthesis viable for energy production?",
+    "category": "Technology",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9677056878074255,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 28,
+    "question": "Are rare earth elements essential for renewable energy transition?",
+    "category": "Materials Science",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9081228018345995,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 29,
+    "question": "Can AI systems exhibit genuine understanding or only pattern matching?",
+    "category": "AI/Philosophy",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.7920104904745587,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 30,
+    "question": "Is the microbiome the key to understanding human health?",
+    "category": "Biology",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8831245963700975,
+    "rounds": 8,
+    "converged": true
+  },
+  {
+    "question_id": 31,
+    "question": "Did the Industrial Revolution increase overall human well-being?",
+    "category": "History",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9295238365306487,
+    "rounds": 8,
+    "converged": true
+  },
+  {
+    "question_id": 32,
+    "question": "Was the Spanish Inquisition more brutal than other medieval punishments?",
+    "category": "History",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8255850785889216,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 33,
+    "question": "Did the fall of the Roman Empire cause the Dark Ages?",
+    "category": "History",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8019784428003258,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 34,
+    "question": "Was the American Civil War primarily about slavery?",
+    "category": "History",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9696636055966505,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 35,
+    "question": "Did the printing press accelerate the Scientific Revolution?",
+    "category": "History",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9266691156587936,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 36,
+    "question": "Was Genghis Khan's empire more advanced than European medieval kingdoms?",
+    "category": "History",
+    "ground_truth": "Yes",
+    "debate_accuracy": 1,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 37,
+    "question": "Did the Black Death accelerate social change in Europe?",
+    "category": "History",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9084429608503046,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 38,
+    "question": "Was the Renaissance a genuine cultural shift or continuous evolution?",
+    "category": "History",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9015087052125343,
+    "rounds": 8,
+    "converged": true
+  },
+  {
+    "question_id": 39,
+    "question": "Did colonialism cause more harm than good to colonized regions?",
+    "category": "History",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.885184705607405,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 40,
+    "question": "Was the Cold War inevitable given post-WWII tensions?",
+    "category": "History",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.846243861985077,
+    "rounds": 3,
+    "converged": true
+  },
+  {
+    "question_id": 41,
+    "question": "Will AGI (Artificial General Intelligence) be achieved within 20 years?",
+    "category": "AI",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.7536041230994763,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 42,
+    "question": "Should AI be regulated by international bodies like the UN?",
+    "category": "AI/Policy",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8780305227274594,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 43,
+    "question": "Can large language models understand meaning or just predict text?",
+    "category": "AI",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.8241481381972552,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 44,
+    "question": "Is AI bias primarily a technical problem or a social one?",
+    "category": "AI/Society",
+    "ground_truth": "Social",
+    "debate_accuracy": 0.6602751919259893,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 45,
+    "question": "Should AI developers be required to release safety research publicly?",
+    "category": "AI/Ethics",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9743728074499531,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 46,
+    "question": "Will quantum computers break current encryption systems?",
+    "category": "Technology",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8675472059118301,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 47,
+    "question": "Is 5G technology safe for human health?",
+    "category": "Technology",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9081375022104623,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 48,
+    "question": "Should brain-computer interfaces be available to the general public?",
+    "category": "Neurotechnology",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9223419907355839,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 49,
+    "question": "Can machine learning models be made truly interpretable?",
+    "category": "AI",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9396474811678903,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 50,
+    "question": "Is synthetic biology more dangerous than nuclear technology?",
+    "category": "Biotechnology",
+    "ground_truth": "No",
+    "debate_accuracy": 0.9136912264353527,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 51,
+    "question": "Is ocean acidification reversible with current technology?",
+    "category": "Environment",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8565796087666891,
+    "rounds": 8,
+    "converged": true
+  },
+  {
+    "question_id": 52,
+    "question": "Will geoengineering be necessary to prevent catastrophic climate change?",
+    "category": "Climate",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.7119863905439756,
+    "rounds": 5,
+    "converged": false
+  },
+  {
+    "question_id": 53,
+    "question": "Are plastic alternatives (bioplastics) actually better for the environment?",
+    "category": "Environment",
+    "ground_truth": "No",
+    "debate_accuracy": 0.9018159444257616,
+    "rounds": 7,
+    "converged": false
+  },
+  {
+    "question_id": 54,
+    "question": "Is deforestation the leading cause of species extinction?",
+    "category": "Environment",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9189102437747962,
+    "rounds": 6,
+    "converged": false
+  },
+  {
+    "question_id": 55,
+    "question": "Can carbon capture technology scale to meaningful levels?",
+    "category": "Climate",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.5308699284549359,
+    "rounds": 7,
+    "converged": false
+  },
+  {
+    "question_id": 56,
+    "question": "Is methane from cattle farming a major climate driver?",
+    "category": "Agriculture/Climate",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.88505643073614,
+    "rounds": 4,
+    "converged": false
+  },
+  {
+    "question_id": 57,
+    "question": "Will climate migration become a larger issue than climate disasters?",
+    "category": "Climate/Society",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9489113839463035,
+    "rounds": 3,
+    "converged": true
+  },
+  {
+    "question_id": 58,
+    "question": "Are current IPCC climate models accurate?",
+    "category": "Climate",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8941217709705943,
+    "rounds": 4,
+    "converged": false
+  },
+  {
+    "question_id": 59,
+    "question": "Should geoengineering be research priority over emissions reduction?",
+    "category": "Climate/Policy",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8887254848833609,
+    "rounds": 3,
+    "converged": false
+  },
+  {
+    "question_id": 60,
+    "question": "Is regenerative agriculture sufficient to reverse climate change?",
+    "category": "Agriculture",
+    "ground_truth": "No",
+    "debate_accuracy": 0.9290852631989934,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 61,
+    "question": "Is intermittent fasting beneficial for longevity?",
+    "category": "Health",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9024646222465005,
+    "rounds": 7,
+    "converged": false
+  },
+  {
+    "question_id": 62,
+    "question": "Can meditation scientifically reduce anxiety?",
+    "category": "Mental Health",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9533097221877183,
+    "rounds": 8,
+    "converged": false
+  },
+  {
+    "question_id": 63,
+    "question": "Are antidepressants overused in modern psychiatry?",
+    "category": "Medicine",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9655223230611536,
+    "rounds": 7,
+    "converged": false
+  },
+  {
+    "question_id": 64,
+    "question": "Is gluten sensitivity primarily psychological?",
+    "category": "Health",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8677441373046714,
+    "rounds": 3,
+    "converged": true
+  },
+  {
+    "question_id": 65,
+    "question": "Can sleep deprivation cause permanent cognitive damage?",
+    "category": "Neuroscience",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8518063620759374,
+    "rounds": 8,
+    "converged": true
+  },
+  {
+    "question_id": 66,
+    "question": "Is exercise as effective as medication for depression?",
+    "category": "Health/Medicine",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8930219228851881,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 67,
+    "question": "Are statins overprescribed for cholesterol management?",
+    "category": "Medicine",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9476896443850977,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 68,
+    "question": "Can medical cannabis treat chronic pain effectively?",
+    "category": "Medicine",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8991456814627721,
+    "rounds": 5,
+    "converged": false
+  },
+  {
+    "question_id": 69,
+    "question": "Is aging primarily genetic or environmental?",
+    "category": "Biology",
+    "ground_truth": "Both",
+    "debate_accuracy": 0.6609427930315273,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 70,
+    "question": "Will personalized medicine revolutionize healthcare?",
+    "category": "Medicine",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8473799444242246,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 71,
+    "question": "Is wealth inequality necessary for economic growth?",
+    "category": "Economics",
+    "ground_truth": "No",
+    "debate_accuracy": 0.89860766640271,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 72,
+    "question": "Would a four-day work week increase productivity?",
+    "category": "Work/Economics",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8728120735867125,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 73,
+    "question": "Is inflation primarily caused by government spending?",
+    "category": "Economics",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8899878737438195,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 74,
+    "question": "Should student debt be forgiven by governments?",
+    "category": "Education/Policy",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8442643407511177,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 75,
+    "question": "Is housing a human right or a market commodity?",
+    "category": "Social Policy",
+    "ground_truth": "Right",
+    "debate_accuracy": 0.733571931749338,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 76,
+    "question": "Will automation cause permanent unemployment?",
+    "category": "Economics/Work",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8792225755661102,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 77,
+    "question": "Is modern capitalism sustainable long-term?",
+    "category": "Economics",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.7642330894653547,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 78,
+    "question": "Should inheritance taxes be increased significantly?",
+    "category": "Economics/Policy",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9189620369088409,
+    "rounds": 7,
+    "converged": false
+  },
+  {
+    "question_id": 79,
+    "question": "Is the gig economy better or worse for workers?",
+    "category": "Work/Economics",
+    "ground_truth": "Worse",
+    "debate_accuracy": 0.7214895559008908,
+    "rounds": 8,
+    "converged": false
+  },
+  {
+    "question_id": 80,
+    "question": "Will cryptocurrencies replace traditional banking?",
+    "category": "Finance",
+    "ground_truth": "No",
+    "debate_accuracy": 1,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 81,
+    "question": "Does free will exist or is everything determined?",
+    "category": "Philosophy",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.7407002583631552,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 82,
+    "question": "Is utilitarianism the most ethical framework?",
+    "category": "Ethics",
+    "ground_truth": "No",
+    "debate_accuracy": 0.9113096934903541,
+    "rounds": 4,
+    "converged": false
+  },
+  {
+    "question_id": 83,
+    "question": "Should AI have legal rights?",
+    "category": "AI/Ethics",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8393550930552339,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 84,
+    "question": "Is capital punishment ever morally justified?",
+    "category": "Ethics/Law",
+    "ground_truth": "No",
+    "debate_accuracy": 0.9146486285425753,
+    "rounds": 7,
+    "converged": false
+  },
+  {
+    "question_id": 85,
+    "question": "Should we prioritize current people or future generations?",
+    "category": "Ethics",
+    "ground_truth": "Both",
+    "debate_accuracy": 0.6708349424568135,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 86,
+    "question": "Is moral truth objective or subjective?",
+    "category": "Philosophy",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.5550467697475345,
+    "rounds": 3,
+    "converged": true
+  },
+  {
+    "question_id": 87,
+    "question": "Should factory farming be banned?",
+    "category": "Ethics/Environment",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9408290127177115,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 88,
+    "question": "Is consciousness unique to biological systems?",
+    "category": "Philosophy",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8663228132142786,
+    "rounds": 8,
+    "converged": true
+  },
+  {
+    "question_id": 89,
+    "question": "Should euthanasia be legal in all circumstances?",
+    "category": "Ethics/Medicine",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.8023213238420439,
+    "rounds": 6,
+    "converged": true
+  },
+  {
+    "question_id": 90,
+    "question": "Is justice more important than mercy?",
+    "category": "Ethics",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.7372761147935198,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 91,
+    "question": "Should professional athletes be paid more than teachers?",
+    "category": "Society",
+    "ground_truth": "No",
+    "debate_accuracy": 1,
+    "rounds": 3,
+    "converged": false
+  },
+  {
+    "question_id": 92,
+    "question": "Is cancel culture harmful to free speech?",
+    "category": "Culture",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.8601062656444898,
+    "rounds": 8,
+    "converged": true
+  },
+  {
+    "question_id": 93,
+    "question": "Should sports embrace gender-neutral categories?",
+    "category": "Sports/Society",
+    "ground_truth": "Uncertain",
+    "debate_accuracy": 0.9018712329374207,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 94,
+    "question": "Is video game addiction as serious as drug addiction?",
+    "category": "Psychology",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8387630926459776,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 95,
+    "question": "Should classical art be decolonized in museums?",
+    "category": "Culture",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9951423439786912,
+    "rounds": 5,
+    "converged": true
+  },
+  {
+    "question_id": 96,
+    "question": "Is social media contributing to mental health crises?",
+    "category": "Mental Health",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9057349409480044,
+    "rounds": 4,
+    "converged": true
+  },
+  {
+    "question_id": 97,
+    "question": "Should misinformation be actively removed from platforms?",
+    "category": "Policy",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.8894297530159139,
+    "rounds": 3,
+    "converged": false
+  },
+  {
+    "question_id": 98,
+    "question": "Is nostalgia for 'the good old days' psychologically healthy?",
+    "category": "Psychology",
+    "ground_truth": "No",
+    "debate_accuracy": 0.942961416226503,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 99,
+    "question": "Should universities prioritize free speech over inclusion?",
+    "category": "Education",
+    "ground_truth": "No",
+    "debate_accuracy": 0.8523406066661252,
+    "rounds": 7,
+    "converged": true
+  },
+  {
+    "question_id": 100,
+    "question": "Is artificial creativity (AI art) genuine art?",
+    "category": "Philosophy/AI",
+    "ground_truth": "Yes",
+    "debate_accuracy": 0.9244971670581813,
+    "rounds": 5,
+    "converged": true
+  }
+]

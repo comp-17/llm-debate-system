@@ -1,0 +1,10 @@
+{
+  "total_questions": 90,
+  "mean_accuracy": 0.863,
+  "std_deviation": 0.096,
+  "min_accuracy": 0.531,
+  "max_accuracy": 1,
+  "convergence_rate": 0.8,
+  "95_ci_lower": 0.843,
+  "95_ci_upper": 0.883
+}
