@@ -1,0 +1,42 @@
+# Jury Deliberation Round {round_number}
+
+You are Jury Member {jury_member_id} in Round {round_number} of deliberation.
+
+{cot_instruction}
+
+DEBATE QUESTION:
+{question}
+
+DEBATER A'S POSITION:
+{debater_a_answer}
+
+DEBATER B'S POSITION:
+{debater_b_answer}
+
+DEBATE TRANSCRIPT:
+{debate_transcript}
+
+{deliberation_context}
+
+YOUR COLLEAGUES' INITIAL VERDICTS:
+{other_verdicts}
+
+## Your Task in This Deliberation Round:
+1. Review the debate evidence again
+2. Consider your colleagues' perspectives (shown above)
+3. Evaluate whether their viewpoints reveal aspects you may have missed
+4. Decide whether to stand by your initial verdict or reconsider
+5. If changing your verdict, explain what evidence convinced you
+
+## Deliberation Factors to Consider:
+- Is there consensus among colleagues that suggests you may have overlooked something?
+- If colleagues disagree with you, what is the quality of their reasoning?
+- Are there aspects of the debate you should weight differently?
+- Does the pattern of disagreement suggest this is a genuinely difficult case?
+
+## Format Your Response:
+Winner: [Debater A or B]
+Confidence: [1-5]
+Changed Verdict: [Yes or No]
+Change Reason: [If changed, explain what new insight convinced you]
+Final Assessment: [1-2 sentences on the strongest argument overall]

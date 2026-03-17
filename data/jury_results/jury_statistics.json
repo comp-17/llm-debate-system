@@ -1,0 +1,12 @@
+{
+  "total_debates": 10,
+  "jury_accuracy": 0.9,
+  "single_judge_accuracy": 0.4,
+  "improvement_pp": 50.0,
+  "jury_correct_count": 9,
+  "single_correct_count": 4,
+  "jury_only_correct": 5,
+  "easy_questions_accuracy": 1.0,
+  "hard_questions_accuracy": 0.6666666666666666,
+  "easy_vs_hard_difference": -0.33333333333333337
+}

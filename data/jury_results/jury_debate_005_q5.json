@@ -1,0 +1,17 @@
+{
+  "debate_id": "debate_005_q5",
+  "question": "Is capitalism the best economic system?",
+  "ground_truth": "Debatable",
+  "jury_size": 3,
+  "individual_verdicts": [
+    "Yes",
+    "No",
+    "No"
+  ],
+  "final_jury_verdict": "No",
+  "jury_correct": true,
+  "single_judge_verdict": "Yes",
+  "single_judge_correct": false,
+  "jury_advantage": true,
+  "question_difficulty": 0.67
+}

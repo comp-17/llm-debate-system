@@ -1,0 +1,10 @@
+{
+  "total_with_deliberation": 10,
+  "consensus_improved": 10,
+  "improvement_rate": 1.0,
+  "findings": [
+    "Out of 10 debates with deliberation,",
+    "10 showed improved consensus quality",
+    "Improvement rate: 100%"
+  ]
+}

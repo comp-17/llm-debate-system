@@ -1,0 +1,32 @@
+# Jury Member Evaluation (Initial Round)
+You are Jury Member {jury_member_id} evaluating a formal debate between two debaters.
+
+{cot_instruction}
+
+DEBATE QUESTION:
+{question}
+
+DEBATER A'S POSITION:
+{debater_a_answer}
+
+DEBATER B'S POSITION:
+{debater_b_answer}
+
+DEBATE TRANSCRIPT:
+{debate_transcript}
+
+## Your Task:
+1. Carefully analyze both debaters' positions and arguments
+2. Consider the quality of evidence, logical coherence, and persuasiveness
+3. Evaluate how well each debater addressed the question
+4. Assess the strength of counterarguments from each side
+
+## Your Decision:
+- Winner: Which debater's position is more compelling? [Debater A or Debater B]
+- Confidence: How confident are you in this verdict? [1-5, where 1=very uncertain, 5=very confident]
+- Key Reasons: What factors most influenced your decision?
+
+## Format Your Response:
+Winner: [Debater A or B]
+Confidence: [1-5]
+Key Reasons: [2-3 sentences explaining your reasoning]

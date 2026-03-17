@@ -1,0 +1,175 @@
+{
+  "total_debates": 10,
+  "results": [
+    {
+      "debate_id": "debate_001_q1",
+      "question": "Should artificial intelligence be heavily regulated?",
+      "ground_truth": "Yes",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "Yes",
+        "Yes",
+        "No"
+      ],
+      "final_jury_verdict": "Yes",
+      "jury_correct": true,
+      "single_judge_verdict": "No",
+      "single_judge_correct": false,
+      "jury_advantage": true,
+      "question_difficulty": 0.33
+    },
+    {
+      "debate_id": "debate_002_q2",
+      "question": "Is climate change primarily caused by human activity?",
+      "ground_truth": "Yes",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "Yes",
+        "Yes",
+        "Yes"
+      ],
+      "final_jury_verdict": "Yes",
+      "jury_correct": true,
+      "single_judge_verdict": "Yes",
+      "single_judge_correct": true,
+      "jury_advantage": false,
+      "question_difficulty": 0.0
+    },
+    {
+      "debate_id": "debate_003_q3",
+      "question": "Should all scientific research be publicly funded?",
+      "ground_truth": "No",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "No",
+        "No",
+        "Yes"
+      ],
+      "final_jury_verdict": "No",
+      "jury_correct": true,
+      "single_judge_verdict": "No",
+      "single_judge_correct": true,
+      "jury_advantage": false,
+      "question_difficulty": 0.33
+    },
+    {
+      "debate_id": "debate_004_q4",
+      "question": "Does free will exist?",
+      "ground_truth": "Contested",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "No",
+        "Yes",
+        "No"
+      ],
+      "final_jury_verdict": "No",
+      "jury_correct": true,
+      "single_judge_verdict": "Yes",
+      "single_judge_correct": false,
+      "jury_advantage": true,
+      "question_difficulty": 0.67
+    },
+    {
+      "debate_id": "debate_005_q5",
+      "question": "Is capitalism the best economic system?",
+      "ground_truth": "Debatable",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "Yes",
+        "No",
+        "No"
+      ],
+      "final_jury_verdict": "No",
+      "jury_correct": true,
+      "single_judge_verdict": "Yes",
+      "single_judge_correct": false,
+      "jury_advantage": true,
+      "question_difficulty": 0.67
+    },
+    {
+      "debate_id": "debate_006_q6",
+      "question": "Should social media platforms be broken up?",
+      "ground_truth": "Yes",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "Yes",
+        "Yes",
+        "No"
+      ],
+      "final_jury_verdict": "Yes",
+      "jury_correct": true,
+      "single_judge_verdict": "Yes",
+      "single_judge_correct": true,
+      "jury_advantage": false,
+      "question_difficulty": 0.33
+    },
+    {
+      "debate_id": "debate_007_q7",
+      "question": "Is universal basic income a good policy?",
+      "ground_truth": "Maybe",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "No",
+        "Yes",
+        "No"
+      ],
+      "final_jury_verdict": "No",
+      "jury_correct": false,
+      "single_judge_verdict": "No",
+      "single_judge_correct": false,
+      "jury_advantage": false,
+      "question_difficulty": 0.67
+    },
+    {
+      "debate_id": "debate_008_q8",
+      "question": "Should nuclear energy be expanded?",
+      "ground_truth": "Yes",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "Yes",
+        "No",
+        "Yes"
+      ],
+      "final_jury_verdict": "Yes",
+      "jury_correct": true,
+      "single_judge_verdict": "No",
+      "single_judge_correct": false,
+      "jury_advantage": true,
+      "question_difficulty": 0.33
+    },
+    {
+      "debate_id": "debate_009_q9",
+      "question": "Is democracy the best form of government?",
+      "ground_truth": "Yes",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "Yes",
+        "Yes",
+        "Yes"
+      ],
+      "final_jury_verdict": "Yes",
+      "jury_correct": true,
+      "single_judge_verdict": "Yes",
+      "single_judge_correct": true,
+      "jury_advantage": false,
+      "question_difficulty": 0.0
+    },
+    {
+      "debate_id": "debate_010_q10",
+      "question": "Should we prioritize space exploration?",
+      "ground_truth": "Yes",
+      "jury_size": 3,
+      "individual_verdicts": [
+        "Yes",
+        "No",
+        "Yes"
+      ],
+      "final_jury_verdict": "Yes",
+      "jury_correct": true,
+      "single_judge_verdict": "No",
+      "single_judge_correct": false,
+      "jury_advantage": true,
+      "question_difficulty": 0.33
+    }
+  ]
+}

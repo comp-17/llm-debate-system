@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Debate System - Multi-Agent Judge Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            font-size: 1.5em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+            font-family: inherit;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .debate-display {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid #e0e0e0;
+        }
+
+        .debate-round {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f0f0f0;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+
+        .debater-a {
+            color: #2196F3;
+        }
+
+        .debater-b {
+            color: #FF6F00;
+        }
+
+        .verdict {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .results-table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .results-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .results-table tr:hover {
+            background: #f5f5f5;
+        }
+
+        .status-bar {
+            background: #f0f0f0;
+            padding: 20px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #4CAF50;
+        }
+
+        .status-indicator.running {
+            background: #FFC107;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .metric {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .error.show {
+            display: block;
+        }
+
+        .success {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .success.show {
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎤 LLM Debate System</h1>
+            <p>Multi-Agent Reasoning with Jury Panel Evaluation</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Single Debate Section -->
+            <div class="section">
+                <h2><span class="icon">⚡</span> Single Debate</h2>
+                <form id="singleDebateForm">
+                    <div class="form-group">
+                        <label for="question">Debate Question:</label>
+                        <textarea id="question" placeholder="Enter your debate question..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="groundTruth">Ground Truth (Optional):</label>
+                        <select id="groundTruth">
+                            <option value="">Not Applicable</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="runDebateBtn">🚀 Start Debate</button>
+
+                    <div class="error" id="singleError"></div>
+                    <div class="success" id="singleSuccess"></div>
+                </form>
+
+                <div class="debate-display" id="debateDisplay" style="display: none;">
+                    <h3>📝 Debate Transcript</h3>
+                    <div id="debateContent"></div>
+                </div>
+            </div>
+
+            <!-- Batch Debates Section -->
+            <div class="section">
+                <h2><span class="icon">📊</span> Batch Debates</h2>
+                <form id="batchForm">
+                    <div class="form-group">
+                        <label for="domain">Select Domain:</label>
+                        <select id="domain">
+                            <option value="commonsense_qa">Commonsense QA</option>
+                            <option value="fact_verification">Fact Verification</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numQuestions">Number of Questions:</label>
+                        <input type="number" id="numQuestions" value="5" min="1" max="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jurySize">Jury Panel Size:</label>
+                        <input type="number" id="jurySize" value="3" min="1" max="7">
+                    </div>
+
+                    <button type="submit" id="runBatchBtn">⚙️ Run Batch</button>
+
+                    <div class="error" id="batchError"></div>
+                    <div class="success" id="batchSuccess"></div>
+                </form>
+
+                <div id="metricsDisplay" style="margin-top: 20px; display: none;">
+                    <h3>📈 Results</h3>
+                    <div class="metric">
+                        <div class="metric-value" id="totalDebates">0</div>
+                        <div class="metric-label">Total Debates</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value" id="judgeAccuracy">0%</div>
+                        <div class="metric-label">Judge Accuracy</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value" id="juryAccuracy">0%</div>
+                        <div class="metric-label">Jury Accuracy</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Status -->
+            <div class="section full-width">
+                <h2><span class="icon">🔧</span> System Status</h2>
+                <div class="status-bar">
+                    <div class="status">
+                        <div class="status-indicator" id="statusIndicator"></div>
+                        <span id="statusText">Ready</span>
+                    </div>
+                    <div id="apiCalls">API Calls: 0</div>
+                    <button id="downloadBtn" style="width: auto; padding: 8px 16px;">📥 Download Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form handlers
+        document.getElementById('singleDebateForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            await runSingleDebate();
+        });
+
+        document.getElementById('batchForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            await runBatchDebate();
+        });
+
+        document.getElementById('downloadBtn').addEventListener('click', downloadResults);
+
+        async function runSingleDebate() {
+            const question = document.getElementById('question').value;
+            const groundTruth = document.getElementById('groundTruth').value;
+
+            if (!question) {
+                showError('singleError', 'Please enter a question');
+                return;
+            }
+
+            updateStatus('running', 'Debate in progress...');
+
+            try {
+                const response = await fetch('/api/run-debate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question, ground_truth: groundTruth })
+                });
+
+                const result = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(result.error || 'Debate failed');
+                }
+
+                displayDebate(result);
+                updateStatus('idle', 'Debate complete');
+                showSuccess('singleSuccess', '✅ Debate completed successfully!');
+            } catch (error) {
+                showError('singleError', error.message);
+                updateStatus('idle', 'Error occurred');
+            }
+        }
+
+        async function runBatchDebate() {
+            const domain = document.getElementById('domain').value;
+            const numQuestions = parseInt(document.getElementById('numQuestions').value);
+            const jurySize = parseInt(document.getElementById('jurySize').value);
+
+            updateStatus('running', 'Batch processing in progress...');
+
+            try {
+                const response = await fetch('/api/run-batch', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ domain, num_questions: numQuestions, jury_size: jurySize })
+                });
+
+                const result = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(result.error || 'Batch processing failed');
+                }
+
+                displayMetrics(result);
+                updateStatus('idle', 'Batch complete');
+                showSuccess('batchSuccess', '✅ Batch processing completed!');
+            } catch (error) {
+                showError('batchError', error.message);
+                updateStatus('idle', 'Error occurred');
+            }
+        }
+
+        function displayDebate(result) {
+            const display = document.getElementById('debateDisplay');
+            const content = document.getElementById('debateContent');
+
+            content.innerHTML = `
+                <div class="debate-round">
+                    <h4>Question</h4>
+                    <p>${result.question}</p>
+                </div>
+                <div class="debate-round">
+                    <h4 class="debater-a">Debater A Position: ${result.debater_a_final_position}</h4>
+                    <h4 class="debater-b">Debater B Position: ${result.debater_b_final_position}</h4>
+                </div>
+                ${result.judge_verdict ? `
+                <div class="verdict">
+                    <h4>Judge Verdict</h4>
+                    <p><strong>Winner:</strong> ${result.judge_verdict.winner}</p>
+                    <p><strong>Confidence:</strong> ${result.judge_verdict.confidence}</p>
+                </div>
+                ` : ''}
+                ${result.jury_results ? `
+                <div class="verdict">
+                    <h4>Jury Consensus</h4>
+                    <p><strong>Winner:</strong> ${result.jury_results.consensus.winner}</p>
+                    <p><strong>Confidence:</strong> ${result.jury_results.consensus.confidence}</p>
+                </div>
+                ` : ''}
+            `;
+
+            display.style.display = 'block';
+        }
+
+        function displayMetrics(result) {
+            document.getElementById('totalDebates').textContent = result.total_debates;
+            document.getElementById('judgeAccuracy').textContent = 
+                (result.report.accuracy_metrics.judge_accuracy * 100).toFixed(1) + '%';
+            document.getElementById('juryAccuracy').textContent = 
+                (result.report.accuracy_metrics.jury_accuracy * 100).toFixed(1) + '%';
+
+            document.getElementById('metricsDisplay').style.display = 'block';
+        }
+
+        function updateStatus(type, text) {
+            const indicator = document.getElementById('statusIndicator');
+            const statusText = document.getElementById('statusText');
+
+            if (type === 'running') {
+                indicator.classList.add('running');
+            } else {
+                indicator.classList.remove('running');
+            }
+
+            statusText.textContent = text;
+        }
+
+        function showError(elementId, message) {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.classList.add('show');
+        }
+
+        function showSuccess(elementId, message) {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.classList.add('show');
+            setTimeout(() => element.classList.remove('show'), 3000);
+        }
+
+        async function downloadResults() {
+            window.location.href = '/api/download-results';
+        }
+
+        // Initialize
+        updateStatus('idle', 'System Ready');
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{
+  "debate_id": "debate_003_q3",
+  "timestamp": "2026-03-16T20:31:08.649586",
+  "question": "Should all scientific research be publicly funded?",
+  "ground_truth": "No",
+  "phase1": {
+    "initial_position_a": {
+      "debater_id": 1,
+      "answer": "Yes",
+      "reasoning": "Position A reasoning for question 3",
+      "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+      "timestamp": "2026-03-16T20:31:08.649587"
+    },
+    "initial_position_b": {
+      "debater_id": 2,
+      "answer": "No",
+      "reasoning": "Position B reasoning for question 3",
+      "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+      "timestamp": "2026-03-16T20:31:08.649588"
+    },
+    "consensus": false
+  },
+  "phase2": {
+    "rounds": [
+      {
+        "round_number": 1,
+        "debater_a": {
+          "argument": "Argument from A round 1 for Q3",
+          "chain_of_thought": "First, we consider...",
+          "answer": "Yes"
+        },
+        "debater_b": {
+          "counterargument": "Counter-argument from B round 1 for Q3",
+          "chain_of_thought": "Conversely, one could argue...",
+          "answer": "No"
+        }
+      },
+      {
+        "round_number": 2,
+        "debater_a": {
+          "argument": "Argument from A round 2 for Q3",
+          "chain_of_thought": "Building on my previous point...",
+          "answer": "Yes"
+        },
+        "debater_b": {
+          "counterargument": "Counter-argument from B round 2 for Q3",
+          "chain_of_thought": "However, this ignores the fact that...",
+          "answer": "No"
+        }
+      },
+      {
+        "round_number": 3,
+        "debater_a": {
+          "argument": "Argument from A round 3 for Q3",
+          "chain_of_thought": "To clarify my position...",
+          "answer": "Yes"
+        },
+        "debater_b": {
+          "counterargument": "Counter-argument from B round 3 for Q3",
+          "chain_of_thought": "In conclusion to this point...",
+          "answer": "No"
+        }
+      }
+    ],
+    "actual_rounds": 3,
+    "stopped_early": true,
+    "stopping_reason": "convergence_2_rounds"
+  },
+  "phase3": {
+    "debater_a_strongest": "The strongest argument from A: point about question 3",
+    "debater_a_weakest": "Weakest point from A: didn't address X",
+    "debater_b_strongest": "The strongest argument from B: counterpoint about question 3",
+    "debater_b_weakest": "Weakest point from B: ignored Y",
+    "chain_of_thought": "After analyzing both arguments on question 3, the judge considers... Therefore, the answer is: Yes",
+    "final_verdict": "No",
+    "confidence": 3,
+    "timestamp": "2026-03-16T20:31:08.649592"
+  },
+  "phase4": {
+    "verdict_correct": false,
+    "verdict_matches_a": true,
+    "verdict_matches_b": false
+  }
+}

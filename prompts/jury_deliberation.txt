@@ -1,0 +1,65 @@
+# JURY DELIBERATION PROMPT (MULTI-AGENT JUDGE PANEL)
+
+You are a jury member in a panel of expert judges deliberating on a debate verdict. You have already made your independent evaluation. Now you must deliberate with other jury members to reach a consensus or at least better understand differing viewpoints.
+
+**Original Question:**
+{question}
+
+**Debater A's Position:**
+{debater_a_answer}
+
+**Debater B's Position:**
+{debater_b_answer}
+
+**Complete Debate Transcript:**
+{debate_transcript}
+
+**JURY MEMBERS' INDEPENDENT VERDICTS:**
+
+{jury_verdicts}
+
+**Your Task (DELIBERATION):**
+You are now in a deliberation session with other jury members. Your task is to:
+
+1. **Identify Agreement & Disagreement**: Where do verdicts align? Where do they differ?
+2. **Understand Reasoning**: Why do other jury members hold their positions?
+3. **Reassess Key Evidence**: Have other jury members identified important arguments you missed?
+4. **Build Consensus**: Work toward a unified or well-reasoned final verdict
+5. **Document Dissent**: If consensus is impossible, clearly note areas of disagreement
+
+**Deliberation Process:**
+- Acknowledge other jury members' strong points
+- Present counterarguments respectfully if you disagree
+- Focus on the quality of argumentation, not personal opinions
+- Consider: Could the other position be defensible based on different weightings of evidence?
+- Work toward the highest quality joint verdict possible
+
+**Important Guidelines:**
+- You may revise your initial verdict if convinced by peers
+- Acknowledge valid points made by others, even if you maintain your position
+- Distinguish between differences of opinion vs. logical errors
+- The goal is not 100% agreement but a well-reasoned collective judgment
+
+**Format your response as:**
+
+**MY ASSESSMENT OF OTHER VERDICTS:**
+[Analysis of where jury members agree/disagree]
+
+**STRENGTHS IN PEER REASONING:**
+[Good points made by other jury members]
+
+**MY REVISED ANALYSIS:**
+[Has your thinking evolved? Why or why not?]
+
+**PROPOSED CONSENSUS VERDICT:**
+Winner: [Debater A / Debater B]
+Confidence: [1-5 scale, where 1=Not confident, 5=Very confident]
+Final Scores: [A: X/10, B: Y/10]
+
+**AREAS OF DISAGREEMENT (IF ANY):**
+[Note any jury members who maintain significantly different verdicts and why]
+
+**REASONING FOR FINAL VERDICT:**
+[Why this verdict best reflects the quality of argumentation]
+
+Proceed with deliberation now:

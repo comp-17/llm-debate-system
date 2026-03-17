@@ -1,0 +1,17 @@
+{
+  "debate_id": "debate_009_q9",
+  "question": "Is democracy the best form of government?",
+  "ground_truth": "Yes",
+  "jury_size": 3,
+  "individual_verdicts": [
+    "Yes",
+    "Yes",
+    "Yes"
+  ],
+  "final_jury_verdict": "Yes",
+  "jury_correct": true,
+  "single_judge_verdict": "Yes",
+  "single_judge_correct": true,
+  "jury_advantage": false,
+  "question_difficulty": 0.0
+}

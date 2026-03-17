@@ -1,0 +1,17 @@
+{
+  "debate_id": "debate_007_q7",
+  "question": "Is universal basic income a good policy?",
+  "ground_truth": "Maybe",
+  "jury_size": 3,
+  "individual_verdicts": [
+    "No",
+    "Yes",
+    "No"
+  ],
+  "final_jury_verdict": "No",
+  "jury_correct": false,
+  "single_judge_verdict": "No",
+  "single_judge_correct": false,
+  "jury_advantage": false,
+  "question_difficulty": 0.67
+}

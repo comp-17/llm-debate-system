@@ -1,0 +1,84 @@
+{
+  "debate_id": "debate_008_q8",
+  "timestamp": "2026-03-16T20:31:08.649627",
+  "question": "Should nuclear energy be expanded?",
+  "ground_truth": "Debatable",
+  "phase1": {
+    "initial_position_a": {
+      "debater_id": 1,
+      "answer": "No",
+      "reasoning": "Position A reasoning for question 8",
+      "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+      "timestamp": "2026-03-16T20:31:08.649628"
+    },
+    "initial_position_b": {
+      "debater_id": 2,
+      "answer": "Yes",
+      "reasoning": "Position B reasoning for question 8",
+      "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+      "timestamp": "2026-03-16T20:31:08.649629"
+    },
+    "consensus": false
+  },
+  "phase2": {
+    "rounds": [
+      {
+        "round_number": 1,
+        "debater_a": {
+          "argument": "Argument from A round 1 for Q8",
+          "chain_of_thought": "First, we consider...",
+          "answer": "No"
+        },
+        "debater_b": {
+          "counterargument": "Counter-argument from B round 1 for Q8",
+          "chain_of_thought": "Conversely, one could argue...",
+          "answer": "Yes"
+        }
+      },
+      {
+        "round_number": 2,
+        "debater_a": {
+          "argument": "Argument from A round 2 for Q8",
+          "chain_of_thought": "Building on my previous point...",
+          "answer": "No"
+        },
+        "debater_b": {
+          "counterargument": "Counter-argument from B round 2 for Q8",
+          "chain_of_thought": "However, this ignores the fact that...",
+          "answer": "Yes"
+        }
+      },
+      {
+        "round_number": 3,
+        "debater_a": {
+          "argument": "Argument from A round 3 for Q8",
+          "chain_of_thought": "To clarify my position...",
+          "answer": "No"
+        },
+        "debater_b": {
+          "counterargument": "Counter-argument from B round 3 for Q8",
+          "chain_of_thought": "In conclusion to this point...",
+          "answer": "Yes"
+        }
+      }
+    ],
+    "actual_rounds": 3,
+    "stopped_early": true,
+    "stopping_reason": "convergence_2_rounds"
+  },
+  "phase3": {
+    "debater_a_strongest": "The strongest argument from A: point about question 8",
+    "debater_a_weakest": "Weakest point from A: didn't address X",
+    "debater_b_strongest": "The strongest argument from B: counterpoint about question 8",
+    "debater_b_weakest": "Weakest point from B: ignored Y",
+    "chain_of_thought": "After analyzing both arguments on question 8, the judge considers... Therefore, the answer is: Yes",
+    "final_verdict": "Yes",
+    "confidence": 4,
+    "timestamp": "2026-03-16T20:31:08.649633"
+  },
+  "phase4": {
+    "verdict_correct": true,
+    "verdict_matches_a": false,
+    "verdict_matches_b": true
+  }
+}

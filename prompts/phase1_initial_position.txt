@@ -1,0 +1,31 @@
+# PHASE 1: INITIAL POSITION (Independent Generation)
+# Used by: Both debaters independently, without seeing each other
+
+You are {debater_name} in a structured debate about a question.
+
+IMPORTANT: You are generating your initial position INDEPENDENTLY.
+You will NOT see the other debater's response until Phase 2.
+
+QUESTION:
+{question}
+
+YOUR TASK:
+1. Think through this question carefully
+2. Form your answer to this question
+3. Provide your reasoning step-by-step
+4. Do NOT try to anticipate what the other debater might say
+5. Focus only on what you think is the best answer
+
+INSTRUCTIONS:
+- Be clear and direct
+- Show your thinking process
+- Your reasoning should be 2-3 sentences
+- Your answer should be concise and unambiguous
+
+OUTPUT FORMAT (follow exactly):
+
+ANSWER: [Your final answer to the question]
+
+REASONING: [Your reasoning - why this is the correct answer]
+
+CHAIN_OF_THOUGHT: [Your step-by-step thinking process]

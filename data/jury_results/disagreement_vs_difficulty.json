@@ -1,0 +1,48 @@
+{
+  "Easy": {
+    "count": 1,
+    "avg_disagreement": 0.0,
+    "accuracy": 1.0,
+    "examples": [
+      {
+        "disagreement": 0.0,
+        "jury_correct": true,
+        "question": "Should artificial intelligence be heavily regulate..."
+      }
+    ]
+  },
+  "Medium": {
+    "count": 4,
+    "avg_disagreement": 0.2475,
+    "accuracy": 0.0,
+    "examples": [
+      {
+        "disagreement": 0.33,
+        "jury_correct": false,
+        "question": "Is climate change primarily caused by human activi..."
+      },
+      {
+        "disagreement": 0.0,
+        "jury_correct": false,
+        "question": "Should social media platforms be broken up?..."
+      }
+    ]
+  },
+  "Hard": {
+    "count": 5,
+    "avg_disagreement": 0.264,
+    "accuracy": 0.2,
+    "examples": [
+      {
+        "disagreement": 0.33,
+        "jury_correct": true,
+        "question": "Should all scientific research be publicly funded?..."
+      },
+      {
+        "disagreement": 0.33,
+        "jury_correct": false,
+        "question": "Does free will exist?..."
+      }
+    ]
+  }
+}

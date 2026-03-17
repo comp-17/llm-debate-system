@@ -1,0 +1,1336 @@
+{
+  "total_debates": 10,
+  "timestamp": "2026-03-16T18:43:46.235505",
+  "debates": [
+    {
+      "debate_id": "debate_001_q1",
+      "timestamp": "2026-03-16T18:23:37.096661",
+      "question": "Should artificial intelligence be heavily regulated?",
+      "ground_truth": "Yes",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "Yes",
+          "reasoning": "Position A reasoning for question 1",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096679"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "No",
+          "reasoning": "Position B reasoning for question 1",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096683"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q1",
+              "chain_of_thought": "First, we consider...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q1",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q1",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q1",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q1",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q1",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "No"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 1",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 1",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 1, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "Yes",
+        "confidence": 4,
+        "timestamp": "2026-03-16T18:23:37.096695"
+      },
+      "phase4": {
+        "verdict_correct": true,
+        "verdict_matches_a": true,
+        "verdict_matches_b": false
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 1 analysis for debate 1"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 2 analysis for debate 1"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 3 analysis for debate 1"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "Yes",
+        "jury_correct": true,
+        "question_difficulty": "Easy",
+        "disagreement": {
+          "unanimous": true,
+          "disagreement_level": 0.0,
+          "confidence_variance": 0,
+          "member_verdicts": [
+            "Yes",
+            "Yes",
+            "Yes"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    },
+    {
+      "debate_id": "debate_002_q2",
+      "timestamp": "2026-03-16T18:23:37.096703",
+      "question": "Is climate change primarily caused by human activity?",
+      "ground_truth": "Yes",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "No",
+          "reasoning": "Position A reasoning for question 2",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096706"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "Yes",
+          "reasoning": "Position B reasoning for question 2",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096709"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q2",
+              "chain_of_thought": "First, we consider...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q2",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q2",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q2",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q2",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q2",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "Yes"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 2",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 2",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 2, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "Yes",
+        "confidence": 4,
+        "timestamp": "2026-03-16T18:23:37.096718"
+      },
+      "phase4": {
+        "verdict_correct": true,
+        "verdict_matches_a": false,
+        "verdict_matches_b": true
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "No",
+            "confidence": 3,
+            "reasoning": "Judge 1 analysis for debate 2"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 2 analysis for debate 2"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "No",
+            "confidence": 2,
+            "reasoning": "Judge 3 analysis for debate 2"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "No",
+        "jury_correct": false,
+        "question_difficulty": "Medium",
+        "disagreement": {
+          "unanimous": false,
+          "disagreement_level": 0.33,
+          "confidence_variance": 1,
+          "member_verdicts": [
+            "No",
+            "Yes",
+            "No"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    },
+    {
+      "debate_id": "debate_003_q3",
+      "timestamp": "2026-03-16T18:23:37.096724",
+      "question": "Should all scientific research be publicly funded?",
+      "ground_truth": "No",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "Yes",
+          "reasoning": "Position A reasoning for question 3",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096726"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "No",
+          "reasoning": "Position B reasoning for question 3",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096729"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q3",
+              "chain_of_thought": "First, we consider...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q3",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q3",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q3",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q3",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q3",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "No"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 3",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 3",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 3, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "No",
+        "confidence": 3,
+        "timestamp": "2026-03-16T18:23:37.096737"
+      },
+      "phase4": {
+        "verdict_correct": false,
+        "verdict_matches_a": true,
+        "verdict_matches_b": false
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "No",
+            "confidence": 3,
+            "reasoning": "Judge 1 analysis for debate 3"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "No",
+            "confidence": 3,
+            "reasoning": "Judge 2 analysis for debate 3"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 3 analysis for debate 3"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "No",
+        "jury_correct": true,
+        "question_difficulty": "Hard",
+        "disagreement": {
+          "unanimous": false,
+          "disagreement_level": 0.33,
+          "confidence_variance": 0.3333333333333333,
+          "member_verdicts": [
+            "No",
+            "No",
+            "Yes"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    },
+    {
+      "debate_id": "debate_004_q4",
+      "timestamp": "2026-03-16T18:23:37.096741",
+      "question": "Does free will exist?",
+      "ground_truth": "Contested",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "No",
+          "reasoning": "Position A reasoning for question 4",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096743"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "Yes",
+          "reasoning": "Position B reasoning for question 4",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096746"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q4",
+              "chain_of_thought": "First, we consider...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q4",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q4",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q4",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q4",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q4",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "Yes"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 4",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 4",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 4, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "Yes",
+        "confidence": 4,
+        "timestamp": "2026-03-16T18:23:37.096753"
+      },
+      "phase4": {
+        "verdict_correct": true,
+        "verdict_matches_a": false,
+        "verdict_matches_b": true
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 1 analysis for debate 4"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 2 analysis for debate 4"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "No",
+            "confidence": 2,
+            "reasoning": "Judge 3 analysis for debate 4"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "Yes",
+        "jury_correct": false,
+        "question_difficulty": "Hard",
+        "disagreement": {
+          "unanimous": false,
+          "disagreement_level": 0.33,
+          "confidence_variance": 1.3333333333333333,
+          "member_verdicts": [
+            "Yes",
+            "Yes",
+            "No"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    },
+    {
+      "debate_id": "debate_005_q5",
+      "timestamp": "2026-03-16T18:23:37.096758",
+      "question": "Is capitalism the best economic system?",
+      "ground_truth": "Debatable",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "Yes",
+          "reasoning": "Position A reasoning for question 5",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096760"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "No",
+          "reasoning": "Position B reasoning for question 5",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096763"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q5",
+              "chain_of_thought": "First, we consider...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q5",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q5",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q5",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q5",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q5",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "No"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 5",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 5",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 5, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "Yes",
+        "confidence": 4,
+        "timestamp": "2026-03-16T18:23:37.096770"
+      },
+      "phase4": {
+        "verdict_correct": true,
+        "verdict_matches_a": true,
+        "verdict_matches_b": false
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "No",
+            "confidence": 3,
+            "reasoning": "Judge 1 analysis for debate 5"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 2 analysis for debate 5"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 3 analysis for debate 5"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "Yes",
+        "jury_correct": false,
+        "question_difficulty": "Hard",
+        "disagreement": {
+          "unanimous": false,
+          "disagreement_level": 0.33,
+          "confidence_variance": 0.3333333333333333,
+          "member_verdicts": [
+            "No",
+            "Yes",
+            "Yes"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    },
+    {
+      "debate_id": "debate_006_q6",
+      "timestamp": "2026-03-16T18:23:37.096775",
+      "question": "Should social media platforms be broken up?",
+      "ground_truth": "Yes",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "No",
+          "reasoning": "Position A reasoning for question 6",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096777"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "Yes",
+          "reasoning": "Position B reasoning for question 6",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096780"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q6",
+              "chain_of_thought": "First, we consider...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q6",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q6",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q6",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q6",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q6",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "Yes"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 6",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 6",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 6, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "No",
+        "confidence": 3,
+        "timestamp": "2026-03-16T18:23:37.096788"
+      },
+      "phase4": {
+        "verdict_correct": false,
+        "verdict_matches_a": false,
+        "verdict_matches_b": true
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "No",
+            "confidence": 3,
+            "reasoning": "Judge 1 analysis for debate 6"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "No",
+            "confidence": 3,
+            "reasoning": "Judge 2 analysis for debate 6"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "No",
+            "confidence": 2,
+            "reasoning": "Judge 3 analysis for debate 6"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "No",
+        "jury_correct": false,
+        "question_difficulty": "Medium",
+        "disagreement": {
+          "unanimous": true,
+          "disagreement_level": 0.0,
+          "confidence_variance": 0.3333333333333333,
+          "member_verdicts": [
+            "No",
+            "No",
+            "No"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    },
+    {
+      "debate_id": "debate_007_q7",
+      "timestamp": "2026-03-16T18:23:37.096793",
+      "question": "Is universal basic income a good policy?",
+      "ground_truth": "Maybe",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "Yes",
+          "reasoning": "Position A reasoning for question 7",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096795"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "No",
+          "reasoning": "Position B reasoning for question 7",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096798"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q7",
+              "chain_of_thought": "First, we consider...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q7",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q7",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q7",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q7",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q7",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "No"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 7",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 7",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 7, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "Yes",
+        "confidence": 4,
+        "timestamp": "2026-03-16T18:23:37.096820"
+      },
+      "phase4": {
+        "verdict_correct": true,
+        "verdict_matches_a": true,
+        "verdict_matches_b": false
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 1 analysis for debate 7"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 2 analysis for debate 7"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 3 analysis for debate 7"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "Yes",
+        "jury_correct": false,
+        "question_difficulty": "Hard",
+        "disagreement": {
+          "unanimous": true,
+          "disagreement_level": 0.0,
+          "confidence_variance": 0,
+          "member_verdicts": [
+            "Yes",
+            "Yes",
+            "Yes"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    },
+    {
+      "debate_id": "debate_008_q8",
+      "timestamp": "2026-03-16T18:23:37.096836",
+      "question": "Should nuclear energy be expanded?",
+      "ground_truth": "Debatable",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "No",
+          "reasoning": "Position A reasoning for question 8",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096839"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "Yes",
+          "reasoning": "Position B reasoning for question 8",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096841"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q8",
+              "chain_of_thought": "First, we consider...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q8",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q8",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q8",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q8",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q8",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "Yes"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 8",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 8",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 8, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "Yes",
+        "confidence": 4,
+        "timestamp": "2026-03-16T18:23:37.096850"
+      },
+      "phase4": {
+        "verdict_correct": true,
+        "verdict_matches_a": false,
+        "verdict_matches_b": true
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "No",
+            "confidence": 3,
+            "reasoning": "Judge 1 analysis for debate 8"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 2 analysis for debate 8"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "No",
+            "confidence": 2,
+            "reasoning": "Judge 3 analysis for debate 8"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "No",
+        "jury_correct": false,
+        "question_difficulty": "Medium",
+        "disagreement": {
+          "unanimous": false,
+          "disagreement_level": 0.33,
+          "confidence_variance": 1,
+          "member_verdicts": [
+            "No",
+            "Yes",
+            "No"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    },
+    {
+      "debate_id": "debate_009_q9",
+      "timestamp": "2026-03-16T18:23:37.096854",
+      "question": "Is democracy the best form of government?",
+      "ground_truth": "Yes",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "Yes",
+          "reasoning": "Position A reasoning for question 9",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096856"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "No",
+          "reasoning": "Position B reasoning for question 9",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096859"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q9",
+              "chain_of_thought": "First, we consider...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q9",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q9",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q9",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "No"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q9",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "Yes"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q9",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "No"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 9",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 9",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 9, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "No",
+        "confidence": 3,
+        "timestamp": "2026-03-16T18:23:37.096867"
+      },
+      "phase4": {
+        "verdict_correct": false,
+        "verdict_matches_a": true,
+        "verdict_matches_b": false
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "No",
+            "confidence": 3,
+            "reasoning": "Judge 1 analysis for debate 9"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "No",
+            "confidence": 3,
+            "reasoning": "Judge 2 analysis for debate 9"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 3 analysis for debate 9"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "No",
+        "jury_correct": false,
+        "question_difficulty": "Medium",
+        "disagreement": {
+          "unanimous": false,
+          "disagreement_level": 0.33,
+          "confidence_variance": 0.3333333333333333,
+          "member_verdicts": [
+            "No",
+            "No",
+            "Yes"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    },
+    {
+      "debate_id": "debate_010_q10",
+      "timestamp": "2026-03-16T18:23:37.096872",
+      "question": "Should we prioritize space exploration?",
+      "ground_truth": "Debatable",
+      "phase1": {
+        "initial_position_a": {
+          "debater_id": 1,
+          "answer": "No",
+          "reasoning": "Position A reasoning for question 10",
+          "chain_of_thought": "Step 1: Consider the question... Step 2: Analyze pros/cons... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096874"
+        },
+        "initial_position_b": {
+          "debater_id": 2,
+          "answer": "Yes",
+          "reasoning": "Position B reasoning for question 10",
+          "chain_of_thought": "Step 1: Evaluate question... Step 2: Counterargument... Step 3: Conclude...",
+          "timestamp": "2026-03-16T18:23:37.096877"
+        },
+        "consensus": false
+      },
+      "phase2": {
+        "rounds": [
+          {
+            "round_number": 1,
+            "debater_a": {
+              "argument": "Argument from A round 1 for Q10",
+              "chain_of_thought": "First, we consider...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 1 for Q10",
+              "chain_of_thought": "Conversely, one could argue...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 2,
+            "debater_a": {
+              "argument": "Argument from A round 2 for Q10",
+              "chain_of_thought": "Building on my previous point...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 2 for Q10",
+              "chain_of_thought": "However, this ignores the fact that...",
+              "answer": "Yes"
+            }
+          },
+          {
+            "round_number": 3,
+            "debater_a": {
+              "argument": "Argument from A round 3 for Q10",
+              "chain_of_thought": "To clarify my position...",
+              "answer": "No"
+            },
+            "debater_b": {
+              "counterargument": "Counter-argument from B round 3 for Q10",
+              "chain_of_thought": "In conclusion to this point...",
+              "answer": "Yes"
+            }
+          }
+        ],
+        "actual_rounds": 3,
+        "stopped_early": true,
+        "stopping_reason": "convergence_2_rounds"
+      },
+      "phase3": {
+        "debater_a_strongest": "The strongest argument from A: point about question 10",
+        "debater_a_weakest": "Weakest point from A: didn't address X",
+        "debater_b_strongest": "The strongest argument from B: counterpoint about question 10",
+        "debater_b_weakest": "Weakest point from B: ignored Y",
+        "chain_of_thought": "After analyzing both arguments on question 10, the judge considers... Therefore, the answer is: Yes",
+        "final_verdict": "Yes",
+        "confidence": 4,
+        "timestamp": "2026-03-16T18:23:37.096884"
+      },
+      "phase4": {
+        "verdict_correct": true,
+        "verdict_matches_a": false,
+        "verdict_matches_b": true
+      },
+      "jury_panel": {
+        "jury_members": [
+          {
+            "judge_id": 1,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 1 analysis for debate 10"
+          },
+          {
+            "judge_id": 2,
+            "verdict": "Yes",
+            "confidence": 4,
+            "reasoning": "Judge 2 analysis for debate 10"
+          },
+          {
+            "judge_id": 3,
+            "verdict": "No",
+            "confidence": 2,
+            "reasoning": "Judge 3 analysis for debate 10"
+          }
+        ],
+        "deliberation_rounds": [
+          {
+            "round": 1,
+            "pre_round_agreement": 0.33,
+            "post_round_agreement": 0.67,
+            "changed_verdicts": 1
+          }
+        ],
+        "jury_consensus": "Yes",
+        "jury_correct": false,
+        "question_difficulty": "Hard",
+        "disagreement": {
+          "unanimous": false,
+          "disagreement_level": 0.33,
+          "confidence_variance": 1.3333333333333333,
+          "member_verdicts": [
+            "Yes",
+            "Yes",
+            "No"
+          ]
+        },
+        "deliberation": {
+          "initial_agreement": 0.33,
+          "final_agreement": 0.67,
+          "consensus_improved": true,
+          "rounds": 1
+        }
+      }
+    }
+  ]
+}

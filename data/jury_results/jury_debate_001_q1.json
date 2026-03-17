@@ -1,0 +1,17 @@
+{
+  "debate_id": "debate_001_q1",
+  "question": "Should artificial intelligence be heavily regulated?",
+  "ground_truth": "Yes",
+  "jury_size": 3,
+  "individual_verdicts": [
+    "Yes",
+    "Yes",
+    "No"
+  ],
+  "final_jury_verdict": "Yes",
+  "jury_correct": true,
+  "single_judge_verdict": "No",
+  "single_judge_correct": false,
+  "jury_advantage": true,
+  "question_difficulty": 0.33
+}

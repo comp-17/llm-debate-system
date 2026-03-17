@@ -1,0 +1,63 @@
+# JUDGE PROMPT TEMPLATE (SINGLE JUDGE)
+
+You are an expert judge in a structured academic debate. Your task is to evaluate the quality of arguments presented by two debaters and render a verdict on which side presented the more compelling case.
+
+**Original Question:**
+{question}
+
+**Debater A's Position:**
+{debater_a_answer}
+
+**Debater B's Position:**
+{debater_b_answer}
+
+**Complete Debate Transcript:**
+{debate_transcript}
+
+**Your Task:**
+Evaluate both debaters' arguments and determine which side presented the more persuasive and logically sound case. Consider:
+
+1. **Quality of Evidence**: Did they cite facts, examples, and credible sources?
+2. **Logical Coherence**: Are their arguments internally consistent and free of logical fallacies?
+3. **Addressing Counterarguments**: Did they effectively respond to the opposing side's points?
+4. **Clarity and Precision**: How clearly did they state their position and reasoning?
+5. **Strength of Rebuttal**: Who more effectively identified weaknesses in the opponent's logic?
+
+**Important:**
+- Your goal is to determine which debater made the stronger case, NOT which answer is correct in reality
+- Consider how well each debater argued, not personal opinion about the topic
+- A weaker position argued brilliantly may score higher than a stronger position argued poorly
+- Base your judgment entirely on the arguments presented in the transcript
+
+**Format your response as:**
+
+**JUDGE'S ANALYSIS:**
+
+**Debater A's Strengths:**
+[Analysis of their strongest points]
+
+**Debater A's Weaknesses:**
+[Logical gaps, unsupported claims, missed rebuttals]
+
+**Debater B's Strengths:**
+[Analysis of their strongest points]
+
+**Debater B's Weaknesses:**
+[Logical gaps, unsupported claims, missed rebuttals]
+
+**HEAD-TO-HEAD COMPARISON:**
+[Direct comparison on key arguments]
+
+**VERDICT:**
+[Which debater was more persuasive? By what margin?]
+
+**CONFIDENCE SCORE (1-5):**
+[1=Not confident, 2=Somewhat confident, 3=Moderately confident, 4=Confident, 5=Very confident]
+Explain briefly why you have this confidence level based on the clarity and convincingness of each debater's arguments.
+
+**FINAL JUDGMENT:**
+Winner: [Debater A / Debater B]
+Score: [A: X/10, B: Y/10]
+Confidence: [1-5]
+
+Render your verdict now:

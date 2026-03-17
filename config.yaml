@@ -1,0 +1,51 @@
+# LLM Debate System Configuration
+
+# Model Settings
+model:
+  name: "claude-3-5-sonnet-20241022"
+  temperature: 0.7
+  max_tokens: 1500
+  top_p: 0.9
+
+# Debate Settings
+debate:
+  num_rounds: 4
+  max_rounds: 6
+  convergence_threshold: 2  # Stop after N consecutive rounds of convergence
+  enable_early_stopping: true
+  
+# Judge Settings
+judge:
+  single_judge: true                    # Run single judge baseline for comparison
+  jury_size: 3                          # Number of jury members (3-5 recommended)
+  jury_mode: "deliberation"             # Options: independent, majority_vote, deliberation, weighted
+  max_deliberation_rounds: 2            # Maximum deliberation rounds (1-4)
+  use_chain_of_thought: true            # Enable CoT reasoning for all judges (Wang et al., 2023)
+  reasoning_quality_scoring: true       # Score reasoning quality 0-1
+  difficulty_correlation: true          # Analyze disagreement vs question difficulty
+  
+# Dataset Settings
+dataset:
+  domain: "commonsense_qa"  # Options: commonsense_qa, fact_verification
+  num_samples: 50  # Set to 100+ for full experiments
+  sample_seed: 42
+  
+# Logging
+logging:
+  save_transcripts: true
+  transcript_dir: "logs/transcripts"
+  log_level: "INFO"
+  save_format: "json"
+  
+# API Settings
+api:
+  retry_attempts: 3
+  timeout_seconds: 30
+  rate_limit_delay: 0.1
+  
+# Evaluation
+evaluation:
+  compute_statistics: true
+  save_results: true
+  results_dir: "data/results"
+  baseline_models: ["direct_answer", "majority_vote", "self_consistency"]

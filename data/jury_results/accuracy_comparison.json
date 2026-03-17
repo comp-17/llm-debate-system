@@ -1,0 +1,17 @@
+{
+  "total_debates": 10,
+  "single_judge": {
+    "correct": 7,
+    "accuracy": 0.7,
+    "avg_confidence_when_correct": 4,
+    "avg_confidence_when_wrong": 3
+  },
+  "jury_panel": {
+    "correct": 2,
+    "accuracy": 0.2
+  },
+  "improvement": {
+    "accuracy_delta": -0.5,
+    "jury_better": false
+  }
+}
