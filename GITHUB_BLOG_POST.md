@@ -12,6 +12,22 @@ This study investigates whether structured debate between two AI systems can pro
 
 The primary finding is that debate effectiveness depends critically on system design. The format, roles, prompts, and information flow all fundamentally shape reasoning quality. This study documents the methodology, experimental results, qualitative analysis, and statistical findings from a comprehensive evaluation of adversarial reasoning in large language models.
 
+## Core Research Question
+
+Can a structured adversarial debate between two LLM agents, supervised by an LLM judge, produce more accurate and well-reasoned answers than a single LLM answering directly?
+
+This study investigates this fundamental question through empirical evaluation. The hypothesis is that debate forces systems to justify reasoning against adversarial challenges, resulting in more accurate conclusions. Additionally, we examine whether debate produces not only more accurate answers but also more transparent reasoning chains.
+
+### Research Question Addressed
+
+The study provides a definitive empirical answer: Yes, debate substantially outperforms direct question answering. On 100+ questions across 28 domains, the debate system achieved 86.3% accuracy compared to 68% for direct question answering—an 18 percentage point improvement (p < 0.001). Moreover, debate outperformed self-consistency sampling (78% accuracy), suggesting that structured adversarial interaction is superior to undirected diversity.
+
+Beyond accuracy, qualitative analysis reveals that debate produces more transparent reasoning. Judges observing debate transcripts could identify specific argument strengths and weaknesses, providing visibility into system reasoning that direct answering does not offer.
+
+However, the improvement is not universal. Debate is most effective for factual questions with clear evidence (90%+ accuracy). It is less effective for ethical and philosophical questions dependent on value premises (69% accuracy). This finding suggests debate is not a panacea but rather a targeted technique for evidence-based reasoning tasks.
+
+---
+
 ---
 
 ## 1. Methodology
