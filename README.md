@@ -397,7 +397,7 @@ llm-debate-system/
 ├── requirements.txt                   ⭐ Python dependencies
 ├── .env.example                       (API key template)
 ├── README.md                          ⭐ This file
-├── GITHUB_BLOG_POST.md               (5+ page research blog post)
+├── blog.md               (5+ page research blog post)
 │
 ├── run_four_phase_debate.py           ⭐ CLI runner (debate only)
 ├── run_experiments.py                 (All experiments: debate + baselines)
@@ -487,7 +487,7 @@ python -c "from src.utils.evaluation import BaselineComparison..."  # Baselines
 ### Reproduce Blog Post Results
 
 ```bash
-# Exact configuration from GITHUB_BLOG_POST.md
+# Exact configuration from blog.md
 python run_four_phase_debate.py \
   --samples 50 \
   --sample-seed 42 \
@@ -649,7 +649,7 @@ python run_four_phase_debate.py \
 ## Getting Help
 
 ### Documentation
-- **Main Blog Post**: `GITHUB_BLOG_POST.md` (methodology, results, analysis)
+- **Main Blog Post**: `blog.md` (methodology, results, analysis)
 - **Protocol Guide**: `FOUR_PHASE_PROTOCOL.md` (algorithm details)
 - **Stopping Criterion**: `ADAPTIVE_STOPPING_GUIDE.md` (convergence logic)
 - **Baselines**: `BASELINES_GUIDE.md` (Wei et al., Wang et al.)
